@@ -10,13 +10,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+// Container for banner image
 .container {
   position: relative;
-  display: inline-block;
+  img {
+    filter: brightness(0.5);
+    display: block;
+  }
 }
 
-
+// Banner image text
 .centeredText {
   color: #ffffff;
   font-weight: bold;
@@ -114,9 +117,7 @@ sub {
 sup {
   top: -0.5em;
 }
-img {
-  border-style: none;
-}
+
 svg:not(:root) {
   overflow: hidden;
 }
