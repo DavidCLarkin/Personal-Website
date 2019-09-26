@@ -1,0 +1,25 @@
+.outerHeader { 
+  font-family: Verdana;
+  display: flex;
+  background-color: #000000;
+  justify-content: center;
+	font-size: 24px;
+	@media screen and (max-width:460px) {
+		font-size: 11px;
+	}
+}
+
+.navbar {
+	flex-wrap: wrap;
+	display: flex;
+	flex: 1;
+  margin: auto;
+}
+
+nav {
+  a {
+    text-decoration: none;
+    color: #f2f1ef;
+    margin: 2rem; 
+	}
+}
