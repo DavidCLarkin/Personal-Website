@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
           <div className="centeredText">
             <h1>David Larkin</h1>
             <h3>Software Developer</h3>
-          </div>      
+          </div>
       </div>
       <Footer></Footer>
       
