@@ -1,12 +1,10 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-
-import styles from "../pages/scss/index.scss"
+import "../pages/scss/index.scss"
 
 const Header = ({ siteTitle }) => (
   <div className="outerHeader">
-
     <nav>
       <ul className="navbar">
         <a href="About">About</a>
@@ -14,7 +12,6 @@ const Header = ({ siteTitle }) => (
         <a href="Projects">Projects</a>
       </ul>
     </nav>
-
   </div>
 )
 

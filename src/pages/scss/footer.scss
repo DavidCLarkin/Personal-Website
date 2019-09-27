@@ -1,18 +1,18 @@
 .footerSection {
-    font-family: 'Quicksand', sans-serif;
-    background-color: #000000;
-    width:100%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    ul a {
-        flex-direction: row;
-        margin-left: 1rem;
-        text-decoration: none;
-        color: #f2f1ef;
-    }
-    a:hover {
-        color: #A9A9A9;
-    }
+  font-family: 'Quicksand', sans-serif;
+  background-color: #000000;
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  ul a {
+    flex-direction: row;
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #f2f1ef;
+  }
+  a:hover {
+    color: #A9A9A9;
+  }
 }
