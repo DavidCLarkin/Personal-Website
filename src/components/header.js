@@ -7,8 +7,8 @@ const Header = () => (
     <nav>
       <ul className={styles.navBar}>
         <a href="#about">About</a>
+        <a href="#projects">Projects</a>
         <a href="Resume">Resume</a>
-        <a href="Projects">Projects</a>
       </ul>
     </nav>
   </div>

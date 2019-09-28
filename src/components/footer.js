@@ -1,13 +1,11 @@
 import React from 'react'
-import "../pages/scss/footer.scss"
+import styles from "../pages/scss/footer.module.scss"
 
 const Footer = () => (
-  <footer className="footerSection">
+  <footer className={styles.footerSection}>
 		<div>
-      <ul>
-        <a href="Github">Github</a>
-        <a href="LinkedIn">LinkedIn</a>
-      </ul>
+        <a href="https://github.com/DavidCLarkin">Github</a>
+        <a href="https://www.linkedin.com/in/david-larkin/">LinkedIn</a>
     </div>
   </footer> 
 )

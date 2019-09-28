@@ -1,10 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
-import homeImage from "../images/laptop-colorful.jpg"
 import Footer from "./footer"
 import Header from "./header"
 import About from "./about"
 import Banner from "./banner"
+import Projects from "./projects"
+
 import "../pages/scss/layout.scss"
 
 const Layout = () => {
@@ -14,7 +15,9 @@ const Layout = () => {
       <Header />
       <Banner />
       <a id="about"></a> 
-      <About />     
+      <About />
+      <a id="projects"></a>
+      <Projects />
       <Footer />
     </>
   )
