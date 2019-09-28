@@ -9,41 +9,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-// Container for banner image
-.container {
-  position: relative;
-  img {
-    filter: brightness(0.5);
-    display: block;
-  }
-}
-
-// Banner image text
-.centeredText {
-  font-family: 'Quicksand', sans-serif;
-  color: #ffffff;
-  font-weight: bold;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  text-align:center;
-  line-height: 1.2;
-  h1 {
-    font-size: 6vw;
-    font-family: 'Quicksand', 'sans-serif';
-    letter-spacing: 4px;
-
-  }
-  h3 {
-    font-family: 'Quicksand', 'sans-serif';
-    font-size: 3vw;
-    letter-spacing: 2px;
-  }
-}
-
-
 article,
 aside,
 details,

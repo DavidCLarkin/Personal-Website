@@ -4,21 +4,17 @@ import homeImage from "../images/laptop-colorful.jpg"
 import Footer from "./footer"
 import Header from "./header"
 import About from "./about"
+import Banner from "./banner"
 import "../pages/scss/layout.scss"
 
-const Layout = ({ children }) => {
+const Layout = () => {
 
   return (
     <>
       <Header />
-      <div className="container">
-        <img src={homeImage} alt="laptop with colorful background" />
-          <div className="centeredText">
-            <h1>David Larkin</h1>
-            <h3>Software Developer</h3>
-          </div>
-      </div>
-      <About/>
+      <Banner />
+      <a id="about"></a> 
+      <About />     
       <Footer />
     </>
   )

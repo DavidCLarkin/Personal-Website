@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: 'Quicksand', 'sans-serif';
+}
+
+.image {
+  background-image: url('../images/laptop-colorful.jpg');
+  height:100vh;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5);
+}
+
+
+.centered-text {
+  color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%,-50%);
+  width: 100%;
+  text-align:center;
+  padding:20px;
+}
+
+.name {
+  font-family: 'Quicksand', 'sans-serif';
+  font-weight: 700;
+  font-size: 6vw;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-family: 'Quicksand', 'sans-serif';
+  font-size: 3vw;
+  font-weight: 400;
+  letter-spacing: 2px;
+}

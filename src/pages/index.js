@@ -11,7 +11,7 @@ const IndexPage = () => (
 
 WebFont.load({
   google: {
-    families: ['Quicksand:400', 'sans-serif']
+    families: ['Quicksand:400,700', 'sans-serif']
   }
 });
 

@@ -1,13 +1,12 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import "../pages/scss/index.scss"
+import styles from "../pages/scss/index.module.scss"
 
-const Header = ({ siteTitle }) => (
-  <div className="outerHeader">
+const Header = () => (
+  <div className={styles.outerHeader}>
     <nav>
-      <ul className="navbar">
-        <a href="About">About</a>
+      <ul className={styles.navBar}>
+        <a href="#about">About</a>
         <a href="Resume">Resume</a>
         <a href="Projects">Projects</a>
       </ul>
