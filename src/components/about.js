@@ -1,14 +1,19 @@
 import { graphql, StaticQuery } from "gatsby"
 import React from "react"
+import Fade from 'react-reveal/Fade'
 import styles from "../pages/scss/about.module.scss"
 
 const About = ({data}) => (
   <div className={styles.about}>
     <div className={styles.left}>
-      <h1>ABOUT{/*data.contentfulPost.title*/}</h1>
+      <Fade left>
+        <h1>ABOUT{/*data.contentfulPost.title*/}</h1>
+      </Fade>
     </div>
     <div className={styles.right}>
-      <p>{data.contentfulPost.article.article}</p>
+      <Fade right>
+        <p>{data.contentfulPost.article.article}</p>
+      </Fade>
     </div>
   </div>
 )

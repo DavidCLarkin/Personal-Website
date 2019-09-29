@@ -8,7 +8,6 @@ section {
 .container {
   position: relative;
   flex: 1;
-  //background:tan;
   img {
     filter: brightness(0.5);
   }
@@ -21,8 +20,7 @@ section {
   font-weight: bold;
   position: absolute;
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(90%);
   width: 100%;
   text-align:center;
   line-height: 1.2;
