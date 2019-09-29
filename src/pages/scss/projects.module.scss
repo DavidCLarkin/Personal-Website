@@ -19,3 +19,30 @@
 .right {
   flex-grow: 1;
 }
+
+.project {
+  display: flex;
+  padding: 10px;
+  //flex-wrap: wrap;
+  //justify-content: space-between;
+  img {
+    width: 90%;
+  }
+  a {
+    font-weight: bold;
+  }
+  .date {
+    font-style: italic;
+    position: relative;
+  }
+
+  .container {
+    width: 25%;
+  }
+
+  .description {
+    width: 80%;
+    padding-left: 20px;
+  }
+
+}

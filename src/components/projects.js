@@ -7,7 +7,20 @@ const Projects = ({data}) => (
   <div className={styles.projects}>
     <div className={styles.right}>
       <Fade left>
-        <p>{data.contentfulPost.article.article}</p>
+        <div>
+        {data.allContentfulProject.edges.map(edges => (
+          <div className={styles.project} key={edges.node.title}>
+            <div className={styles.container}>
+              <a href={edges.node.link}>{edges.node.title}</a>
+              <p className={styles.date}>{edges.node.date}</p>
+              <img src={edges.node.image.fluid.src} alt={edges.node.image.description}></img>    
+            </div>
+            <div className={styles.description}>     
+              <p>{edges.node.description.description}</p>
+            </div> 
+          </div>
+        ))} 
+        </div>
       </Fade>
     </div>
     <div className={styles.left}>
@@ -22,12 +35,22 @@ export default props => (
   <StaticQuery 
   query= { 
     graphql `query {
-      contentfulPost {
-        title
-        slug
-        subtitle
-        article {
-          article
+      allContentfulProject {
+        edges {
+          node {
+            title
+            date
+            link
+            description {
+              description              
+            }
+            image {
+              fluid {
+                src
+              }
+              description
+            }
+          }
         }
       }
     }
