@@ -1,5 +1,5 @@
 const dotenv = require('dotenv')
-
+// Remove this in build to try to fix
 if(process.env.NODE_ENV !== 'production') 
 {
   dotenv.config()
@@ -7,9 +7,9 @@ if(process.env.NODE_ENV !== 'production')
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Personal Portfolio`,
+    description: `Personal Website by David Larkin`,
+    author: `@DavidLarkin`,
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -45,7 +45,7 @@ module.exports = {
       resolve: 'gatsby-source-contentful',
       options: {
         spaceId: 'muk1dsfdlq3c',
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality

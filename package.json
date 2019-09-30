@@ -7,6 +7,7 @@
   "dependencies": {
     "contentful": "^7.10.0",
     "dotenv": "^8.1.0",
+    "env-cmd": "^10.0.1",
     "gatsby": "^2.15.26",
     "gatsby-image": "^2.2.21",
     "gatsby-plugin-manifest": "^2.2.18",
