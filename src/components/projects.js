@@ -6,9 +6,9 @@ import styles from "../pages/scss/projects.module.scss"
 const Projects = ({data}) => (
   <div className={styles.wrapper}>
     <div className={styles.projects}>
-      <div className={styles.right}>
+
+      <section className={styles.right}>
         <Fade bottom cascade>
-          <div>
           {data.allContentfulProject.edges.map(edges => (
             <div className={styles.project} key={edges.node.title}>
               <div className={styles.container}>
@@ -16,19 +16,19 @@ const Projects = ({data}) => (
                 <p className={styles.date}>{edges.node.date}</p>
                 <img src={edges.node.image.fluid.src} alt={edges.node.image.description}></img>    
               </div>
-              <div className={styles.description}>     
-                <p>{edges.node.description.description}</p>
-              </div> 
+                  
+              <p className={styles.description}>{edges.node.description.description}</p>
             </div>
           ))} 
-          </div>
         </Fade>
-      </div>
-      <div className={styles.left}>
+      </section>
+      
+      <section className={styles.left}>
         <Fade right>
           <h1>PROJECTS{/*data.contentfulPost.title*/}</h1>
         </Fade>
-      </div>
+      </section>
+
     </div>
   </div>
 )
