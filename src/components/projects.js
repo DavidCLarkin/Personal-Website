@@ -10,19 +10,19 @@ const Projects = ({data}) => (
       <section className={styles.right}>
         <Fade bottom cascade>
           {data.allContentfulProject.edges.map(edges => (
-            <div className={styles.project} key={edges.node.title}>
+            <section className={styles.project} key={edges.node.title}>
               <div className={styles.container}>
                 <a href={edges.node.link}>{edges.node.title}</a>
                 <p className={styles.date}>{edges.node.date}</p>
-                <img src={edges.node.image.fluid.src} alt={edges.node.image.description}></img>    
+                <img src={edges.node.image.fluid.src} alt={edges.node.image.description}></img>   
               </div>
                   
               <p className={styles.description}>{edges.node.description.description}</p>
-            </div>
+            </section>
           ))} 
         </Fade>
       </section>
-      
+
       <section className={styles.left}>
         <Fade right>
           <h1>PROJECTS{/*data.contentfulPost.title*/}</h1>

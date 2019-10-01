@@ -5,6 +5,7 @@ import Slide from "react-reveal/Slide"
 const Banner= () => (
   <section>
     <div className="image"/>
+
     <div className="centered-text">
       <Slide left>
         <h1 className="name">David Larkin</h1>
