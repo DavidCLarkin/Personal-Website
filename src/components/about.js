@@ -6,14 +6,17 @@ import styles from "../pages/scss/about.module.scss"
 const About = ({data}) => (
   <div className={styles.wrapper}>
     <div className={styles.about}>
-
-      <section className={styles.left}>
+      {//<section className={styles.left}>
+        //<Fade left>
+          //<h1>ABOUT{/*data.contentfulPost.title*/}</h1>
+        //</Fade>
+      //</section>
+      }
+      
+      <section>
         <Fade left>
-          <h1>ABOUT{/*data.contentfulPost.title*/}</h1>
+          <h1>ABOUT</h1>
         </Fade>
-      </section>
-
-      <section className={styles.right}>
         <Fade right>
           <p>{data.contentfulPost.article.article}</p>
         </Fade>

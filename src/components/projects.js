@@ -7,7 +7,10 @@ const Projects = ({data}) => (
   <div className={styles.wrapper}>
     <div className={styles.projects}>
 
-      <section className={styles.right}>
+      <section>
+        <Fade right>
+          <h1>PROJECTS</h1>
+        </Fade>
         <Fade bottom cascade>
           {data.allContentfulProject.edges.map(edges => (
             <section className={styles.project} key={edges.node.title}>
@@ -23,11 +26,12 @@ const Projects = ({data}) => (
         </Fade>
       </section>
 
-      <section className={styles.left}>
-        <Fade right>
-          <h1>PROJECTS{/*data.contentfulPost.title*/}</h1>
-        </Fade>
-      </section>
+      {//<section className={styles.left}>
+        //<Fade right>
+         // <h1>PROJECTS{/*data.contentfulPost.title*/}</h1>
+        //</Fade>
+      //</section>
+      }
 
     </div>
   </div>

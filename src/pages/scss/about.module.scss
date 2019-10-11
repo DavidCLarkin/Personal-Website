@@ -7,15 +7,16 @@
   margin: 1rem 1rem 5rem 1rem;
   font-size: 1rem;
   h1 {
-    margin: 0 1rem 0 1rem;
+    margin: 0 0 1rem 0;
     font-family: 'Quicksand', 'sans-serif';
     font-size: 2rem;
+    text-align: center;
   }
 }
 
 .left {
-  writing-mode: vertical-rl;
-  text-orientation: sideways;
+  //writing-mode: vertical-rl;
+  //text-orientation: sideways;
   flex-grow: 1;
 }
 
