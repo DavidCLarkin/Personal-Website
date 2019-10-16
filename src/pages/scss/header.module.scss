@@ -1,0 +1,47 @@
+@import 'base.module.scss';
+
+body {
+  margin: 0;
+}
+
+.navBar { 
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  background-color: #000000;
+  justify-content: space-between;
+  font-size: 24px;
+  
+  ul li {
+    display: inline-block;
+  }
+  
+	@media screen and (max-width: 796px) {
+    font-size: 12px;
+    ul li {
+      display: list-item;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+
+.left-bar {
+  justify-content: left;
+  margin: 1rem;
+}
+
+.right-bar {
+  margin: 1rem;
+  justify-content: right;
+}
+
+nav {
+  a {
+    text-decoration: none;
+    color: #f2f1ef;
+    margin: 2rem;
+  }
+  a:hover {
+    color: #A9A9A9;
+  }
+}

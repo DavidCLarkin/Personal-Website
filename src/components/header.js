@@ -1,25 +1,24 @@
-import PropTypes from "prop-types"
 import React from "react"
-import styles from "../pages/scss/index.module.scss"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faGithub,
+  faLinkedin
+} from "@fortawesome/free-brands-svg-icons"
+
+import styles from "../pages/scss/header.module.scss"
 
 const Header = () => (
-  <div className={styles.outerHeader}>
-    <nav>
-      <ul className={styles.navBar}>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#resume">Resume</a>
-      </ul>
-    </nav>
-  </div>
+  <nav className={styles.navBar}>
+    <ul className={styles.leftBar}>
+      <li><a href="https://github.com/DavidCLarkin"><FontAwesomeIcon icon={faGithub}/></a></li>
+      <li><a href="https://www.linkedin.com/in/david-larkin/"><FontAwesomeIcon icon={faLinkedin}/></a></li>
+    </ul>
+    <ul className={styles.rightBar}>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+    </ul>
+  </nav>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
