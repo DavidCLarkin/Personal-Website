@@ -8,6 +8,7 @@ import {
 import {
   faEnvelope
 } from "@fortawesome/free-solid-svg-icons"
+
 const Footer = () => (
   <footer className={styles.footerSection}>
 		<div>

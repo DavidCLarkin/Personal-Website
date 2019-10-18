@@ -10,17 +10,46 @@ import {
 
 import styles from "../pages/scss/header.module.scss"
 
-const Header = () => (
-  <nav className={styles.navBar}>
-    <ul className={styles.rightBar}>
-      <li><a href="#about">about</a></li>
-      <li><a href="#projects">projects</a></li>
-      <li><a href="#resume">resume</a></li>
-      <li><a href="https://github.com/DavidCLarkin"><FontAwesomeIcon icon={faGithub}/></a></li>
-      <li><a href="https://www.linkedin.com/in/david-larkin/"><FontAwesomeIcon icon={faLinkedin}/></a></li>
-      <li><a href="mailto:davidlarkin96@gmail.com"><FontAwesomeIcon icon={faEnvelope}/></a></li>
-    </ul>
-  </nav>
-)
+class Header extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.openMenu=this.openMenu.bind(this);
+    this.state = {
+      menuPressed: false
+    }
+  }
+  
+  openMenu() {
+    console.log("Pressed")
+    const nav = document.getElementById("nav");
+    this.setState({menuPressed: !this.state.menuPressed})
+    if(this.state.menuPressed)
+    {
+      nav.style.display = "block";
+    }
+    else {
+      nav.style.display = "none";
+    }
+  }
+
+  render() {
+    return (
+    <>
+    <div className={styles.menu} onClick={this.openMenu}>Menu</div>
+    <nav className={styles.navBar} id="nav">
+      <ul className={styles.rightBar}>
+        <li><a href="#about">about</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#resume">resume</a></li>
+        <li><a href="https://github.com/DavidCLarkin"><FontAwesomeIcon icon={faGithub}/></a></li>
+        <li><a href="https://www.linkedin.com/in/david-larkin/"><FontAwesomeIcon icon={faLinkedin}/></a></li>
+        <li><a href="mailto:davidlarkin96@gmail.com"><FontAwesomeIcon icon={faEnvelope}/></a></li>
+      </ul>
+    </nav>
+    </>
+    );
+  }
+}
 
 export default Header

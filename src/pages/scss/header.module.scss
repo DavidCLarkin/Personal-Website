@@ -15,16 +15,7 @@ body {
   ul li {
     display: inline;
   }
-  
-	@media screen and (max-width: 796px) {
-    font-size: 12px;
-    ul li {
-      display: list-item;
-      margin-bottom: 0.5rem;
-    }
-  }
 }
-
 
 .left-bar {
   justify-content: left;
@@ -44,5 +35,29 @@ nav {
   }
   a:hover {
     color: #A9A9A9;
+  }
+}
+
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 796px) {
+  .navBar {
+    display: none;
+    font-size: 12px;
+    justify-content: center;
+    ul li {
+      display: list-item;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .menu {
+    display: block;
+    background: #000000;
+    text-align: center;
+    color: #f2f1ef;
+    height: 48px;
   }
 }
