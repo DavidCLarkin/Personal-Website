@@ -5,7 +5,9 @@ import {
   faLinkedin,
   faGithub
 } from "@fortawesome/free-brands-svg-icons"
-
+import {
+  faEnvelope
+} from "@fortawesome/free-solid-svg-icons"
 const Footer = () => (
   <footer className={styles.footerSection}>
 		<div>
@@ -15,6 +17,10 @@ const Footer = () => (
       <a href="https://www.linkedin.com/in/david-larkin/" className="Linkedin">
         <FontAwesomeIcon icon={faLinkedin} size="2x"/>
       </a>
+      <a href="mailto:davidlarkin96@gmail.com">
+        <FontAwesomeIcon icon={faEnvelope} size="2x"/>
+      </a>
+
     </div>
   </footer> 
 )
