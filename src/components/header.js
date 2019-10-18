@@ -21,15 +21,19 @@ class Header extends React.Component {
   }
   
   openMenu() {
-    console.log("Pressed")
-    const nav = document.getElementById("nav");
-    this.setState({menuPressed: !this.state.menuPressed})
-    if(this.state.menuPressed)
+    if(window.matchMedia("{max-width: 796px}"))
     {
-      nav.style.display = "block";
-    }
-    else {
-      nav.style.display = "none";
+      console.log("Pressed")
+      const nav = document.getElementById("nav");
+      this.setState({menuPressed: !this.state.menuPressed})
+
+      if(this.state.menuPressed)
+      {
+        nav.style.display = "none";
+      }
+      else {
+        nav.style.display = "flex";
+      }
     }
   }
 

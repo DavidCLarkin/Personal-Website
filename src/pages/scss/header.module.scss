@@ -54,10 +54,11 @@ nav {
   }
 
   .menu {
-    display: block;
+    display: flex;
     background: #000000;
-    text-align: center;
+    justify-content: center;
     color: #f2f1ef;
     height: 48px;
   }
 }
+
