@@ -19,13 +19,27 @@ class Header extends React.Component {
       menuPressed: false
     }
   }
+
+  componentDidMount() {
+    window.addEventListener("resize", this.resize.bind(this));
+    this.resize();
+  }
+
+  resize() {
+    const nav = document.getElementById("nav");
+    if (window.innerWidth >= 797) {
+      nav.style.display = "flex";
+    }
+  }
   
   openMenu() {
     if(window.matchMedia("{max-width: 796px}"))
     {
       console.log("Pressed")
       const nav = document.getElementById("nav");
-      this.setState({menuPressed: !this.state.menuPressed})
+      this.setState((prevState) => {
+        return {menuPressed: !prevState.menuPressed};
+      })
 
       if(this.state.menuPressed)
       {
@@ -40,15 +54,15 @@ class Header extends React.Component {
   render() {
     return (
     <>
-    <div className={styles.menu} onClick={this.openMenu}>Menu</div>
+    <button className={styles.menu} onClick={this.openMenu}>Menu</button>
     <nav className={styles.navBar} id="nav">
       <ul className={styles.rightBar}>
-        <li><a href="#about">about</a></li>
-        <li><a href="#projects">projects</a></li>
-        <li><a href="#resume">resume</a></li>
-        <li><a href="https://github.com/DavidCLarkin"><FontAwesomeIcon icon={faGithub}/></a></li>
-        <li><a href="https://www.linkedin.com/in/david-larkin/"><FontAwesomeIcon icon={faLinkedin}/></a></li>
-        <li><a href="mailto:davidlarkin96@gmail.com"><FontAwesomeIcon icon={faEnvelope}/></a></li>
+        <li className={styles.left}><a href="#about">about</a></li>
+        <li className={styles.left}><a href="#projects">projects</a></li>
+        <li className={styles.left}><a href="#resume">resume</a></li>
+        <li className={styles.right}><a href="https://github.com/DavidCLarkin"><FontAwesomeIcon icon={faGithub}/></a></li>
+        <li className={styles.right}><a href="https://www.linkedin.com/in/david-larkin/"><FontAwesomeIcon icon={faLinkedin}/></a></li>
+        <li className={styles.right}><a href="mailto:davidlarkin96@gmail.com"><FontAwesomeIcon icon={faEnvelope}/></a></li>
       </ul>
     </nav>
     </>

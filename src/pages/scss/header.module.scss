@@ -47,18 +47,32 @@ nav {
     display: none;
     font-size: 12px;
     justify-content: center;
+    ul {
+      display: flex;
+      flex-direction: row;
+      flex-flow: wrap;
+      justify-content: space-around;
+    }
+
     ul li {
-      display: list-item;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
     }
   }
 
   .menu {
+    width: 100%;
+    border: none;
+    outline: none;
     display: flex;
     background: #000000;
     justify-content: center;
     color: #f2f1ef;
     height: 48px;
+
+    :active {
+      outline: none;
+    }
   }
+
 }
 
