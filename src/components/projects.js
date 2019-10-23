@@ -8,10 +8,10 @@ const Projects = ({data}) => (
     <div className={styles.projects}>
 
       <section>
-        <Fade right>
+        <Fade cascade>
           <h1>PROJECTS</h1>
         </Fade>
-        <Fade bottom cascade>
+        <Fade cascade>
           {data.allContentfulProject.edges.map(edges => (
             <section className={styles.project} key={edges.node.title}>
               <div className={styles.container}>

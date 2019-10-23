@@ -1,18 +1,18 @@
 import React from "react"
 import "../css/banner.css"
-import Slide from "react-reveal/Slide"
+import Fade from "react-reveal/Fade"
 
 const Banner= () => (
   <section>
     <div className="image"/>
 
     <div className="centered-text">
-      <Slide left>
+      <Fade cascade>
         <h1 className="name">David Larkin</h1>
-      </Slide>
-      <Slide right>
+      </Fade>
+      <Fade cascade>
         <h3>Software Developer</h3>
-      </Slide>
+      </Fade>
     </div>
   </section>
 )

@@ -14,10 +14,10 @@ const About = ({data}) => (
       }
       
       <section>
-        <Fade left>
+        <Fade cascade>
           <h1>ABOUT</h1>
         </Fade>
-        <Fade right>
+        <Fade cascade>
           <p>{data.contentfulPost.article.article}</p>
         </Fade>
       </section>

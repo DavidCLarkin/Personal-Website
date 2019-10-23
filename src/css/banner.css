@@ -25,13 +25,13 @@ body {
 .name {
   font-family: 'Quicksand', 'sans-serif';
   font-weight: 700;
-  font-size: 8vw;
+  font-size: 6vw;
   letter-spacing: 2px;
 }
 
 h3 {
   font-family: 'Quicksand', 'sans-serif';
-  font-size: 4vw;
+  font-size: 3vw;
   font-weight: 400;
   letter-spacing: 2px;
 }

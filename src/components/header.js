@@ -54,8 +54,15 @@ class Header extends React.Component {
   render() {
     return (
     <>
-    <button className={styles.menu} onClick={this.openMenu}>Menu</button>
+    <nav className={styles.mobileMenu}>
+      <div className={styles.logo}>DL</div>
+      <button className={styles.menuBtn} onClick={this.openMenu}>Menu</button>
+    </nav>
+
     <nav className={styles.navBar} id="nav">
+      <ul className={styles.leftBar}>
+        <li className={styles.logo}>DL</li>
+      </ul>
       <ul className={styles.rightBar}>
         <li className={styles.left}><a href="#about">about</a></li>
         <li className={styles.left}><a href="#projects">projects</a></li>
