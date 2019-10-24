@@ -3,17 +3,23 @@
 .footer-section {
   background-color: #000000;
   width: 100%;
-  display: flex;
-  justify-content: center;
+  display:flex;
+  flex-direction: column;
   align-items: center;
-  height: 75px;
+  justify-content: center;
+  height: 100vh;
+
   a {
-    flex-direction: row;
-    margin: 1rem;
-    text-decoration: none;
-    color: #f2f1ef;
+    color: #f2f2f2;
+    margin: 2rem;
   }
+
   a:hover {
-    color: #A9A9A9;
+    color: #a9a9a9;
+  }
+
+  h1 {
+    font-family: 'Quicksand', 'sans-serif';
+    color: #f2f2f2;
   }
 }

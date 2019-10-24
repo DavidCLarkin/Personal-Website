@@ -15,7 +15,7 @@ const About = ({data}) => (
       
       <section>
         <Fade cascade>
-          <h1>ABOUT</h1>
+          <h1>About</h1>
         </Fade>
         <Fade cascade>
           <p>{data.contentfulPost.article.article}</p>

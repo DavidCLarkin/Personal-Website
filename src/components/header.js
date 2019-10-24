@@ -67,9 +67,7 @@ class Header extends React.Component {
         <li className={styles.left}><a href="#about">about</a></li>
         <li className={styles.left}><a href="#projects">projects</a></li>
         <li className={styles.left}><a href="#resume">resume</a></li>
-        <li className={styles.right}><a href="https://github.com/DavidCLarkin"><FontAwesomeIcon icon={faGithub}/></a></li>
-        <li className={styles.right}><a href="https://www.linkedin.com/in/david-larkin/"><FontAwesomeIcon icon={faLinkedin}/></a></li>
-        <li className={styles.right}><a href="mailto:davidlarkin96@gmail.com"><FontAwesomeIcon icon={faEnvelope}/></a></li>
+        <li className={styles.left}><a href="#contact">contact</a></li>
       </ul>
     </nav>
     </>

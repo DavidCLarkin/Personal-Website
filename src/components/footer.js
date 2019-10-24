@@ -1,4 +1,5 @@
 import React from 'react'
+import Fade from "react-reveal"
 import styles from "../pages/scss/footer.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
@@ -11,7 +12,15 @@ import {
 
 const Footer = () => (
   <footer className={styles.footerSection}>
-		<div>
+
+    <Fade cascade>
+    <div>
+      <h1>Contact</h1>
+    </div>
+    </Fade>
+
+    <Fade cascade>
+		<div className={styles.clear}>
       <a href="https://github.com/DavidCLarkin" className="Github">
         <FontAwesomeIcon icon={faGithub} size="2x"/>
       </a>
@@ -21,8 +30,8 @@ const Footer = () => (
       <a href="mailto:davidlarkin96@gmail.com">
         <FontAwesomeIcon icon={faEnvelope} size="2x"/>
       </a>
-
     </div>
+    </Fade>
   </footer> 
 )
 

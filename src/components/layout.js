@@ -5,6 +5,7 @@ import Header from "./header"
 import About from "./about"
 import Banner from "./banner"
 import Projects from "./projects"
+import Contact from "./contact"
 
 import "../pages/scss/layout.scss"
 
@@ -14,10 +15,11 @@ const Layout = () => {
     <>
       <Header />
       <Banner />
-      <a id="about"></a> 
+      <a id="about"/> 
       <About />
-      <a id="projects"></a>
+      <a id="projects"/>
       <Projects />
+      <a id="contact"/>
       <Footer />
     </>
   )
