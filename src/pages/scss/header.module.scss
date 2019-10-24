@@ -58,13 +58,14 @@ nav {
   .nav-bar {
     display: none;
     font-size: 14px;
-    width: 50%;
-    justify-content: flex-end;
+    width: 40%;
+    position: absolute;
+    right: 0;
+    justify-content: center;
     ul {
-      display: block;
-      flex-direction: column;
-      flex-flow: wrap;
-      justify-content: space-around;
+      //flex-direction: column;
+      //flex-flow: wrap;
+      //justify-content: flex-end;
     }
 
     ul li {
