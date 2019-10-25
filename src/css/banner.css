@@ -39,7 +39,7 @@ h3 {
 /* If screen is greater than 480px and less than 796px, dont take whole screen*/
 @media screen and (min-height: 480px) and (max-height: 768px) {
   .background {
-    height: 50vh;
+    height: 70vh;
   }
 
 }

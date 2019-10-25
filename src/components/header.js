@@ -43,7 +43,6 @@ class Header extends React.Component {
   openMenu() {
     if(window.matchMedia("{max-width: 796px}"))
     {
-      console.log("Pressed")
       const nav = document.getElementById("nav");
       this.setState((prevState) => {
         return {menuPressed: !prevState.menuPressed};
@@ -62,9 +61,9 @@ class Header extends React.Component {
   render() {
     return (
     <>
-    <nav className={styles.mobileMenu}>
+    <nav className={styles.mobileMenu} id="mobileMenu">
       <div className={styles.logo}>DL</div>
-      <button className={styles.menuBtn} onClick={this.openMenu}>Menu</button>
+      <button className={styles.menuBtn} onClick={this.openMenu}>&#9776;</button>
     </nav>
 
     <nav className={styles.navBar} id="nav">
@@ -74,7 +73,6 @@ class Header extends React.Component {
       <ul className={styles.rightBar}>
         <li className={styles.left}><a href="#about" onClick={this.closeMenu}>about</a></li>
         <li className={styles.left}><a href="#projects" onClick={this.closeMenu}>projects</a></li>
-        <li className={styles.left}><a href="#resume" onClick={this.closeMenu}>resume</a></li>
         <li className={styles.left}><a href="#contact" onClick={this.closeMenu}>contact</a></li>
       </ul>
     </nav>

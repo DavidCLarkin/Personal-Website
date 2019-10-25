@@ -42,6 +42,9 @@ nav {
   display: none;
 }
 
+label {
+  color: #A9A9A9;
+}
 .mobile-menu {
   display: none;
 }
@@ -58,13 +61,15 @@ nav {
 
   .nav-bar {
     display: none;
-    font-size: 16px;
+    font-size: 32px;
     width: 100%;
-    position: relative;
-    height: 100vh;
+    position: fixed;
+    height: 100%;
     align-items: center;
     justify-content: center;
     z-index: 1;
+    top: 0;
+    background-color: rgba(0,0,0,0.95);
     ul {
       //flex-direction: column;
       //flex-flow: wrap;
@@ -81,32 +86,42 @@ nav {
     }
   }
 
-  .menu-btn {
-    width: 20%;
-    border: none;
-    outline: none;
-    display: flex;
-    background: #000000;
-    justify-content: center;
-    color: #f2f1ef;
-    height: 54px;
-    align-self: center;
-
-    :active {
-      outline: none;
-    }
-  }
-
   .mobile-menu {
     background: #000000;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    
+    .menu-btn, .logo {
+      z-index: 2
+    }
+
+    .menu-btn {
+      width: 20%;
+      font-size: 1.75rem;
+      border: none;
+      outline: none;
+      display: flex;
+      background: none;
+      justify-content: center;
+      color: #f2f1ef;
+      text-shadow: 2px 2px 2px #000000;
+      mix-blend-mode: difference;
+      height: 54px;
+      align-self: center;
+      position: fixed;
+      right: 0;
+  
+      :active {
+        outline: none;
+      }
+    }
+
+    .logo {
+      margin: 1rem;
+    }
   }
 
-  .logo {
-    margin: 1rem;
-  }
 
 }
 
