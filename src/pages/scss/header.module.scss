@@ -55,13 +55,16 @@ nav {
 }
 
 @media screen and (max-width: 796px) {
+
   .nav-bar {
     display: none;
     font-size: 16px;
-    width: 40%;
-    position: absolute;
-    right: 0;
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    align-items: center;
     justify-content: center;
+    z-index: 1;
     ul {
       //flex-direction: column;
       //flex-flow: wrap;

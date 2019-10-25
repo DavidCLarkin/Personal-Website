@@ -5,7 +5,6 @@ import Header from "./header"
 import About from "./about"
 import Banner from "./banner"
 import Projects from "./projects"
-import Contact from "./contact"
 
 import "../pages/scss/layout.scss"
 

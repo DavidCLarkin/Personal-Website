@@ -4,9 +4,11 @@
 .about {
   display: flex;
   justify-content: center;
-  margin: 1rem 1rem 5rem 1rem;
+  align-items: center;
+  height: 100vh;
+  margin: 5rem 1rem 5rem 1rem;
   font-size: 1rem;
-  
+
   h1 {
     margin: 0 0 1rem 0;
     font-family: 'Quicksand', 'sans-serif';

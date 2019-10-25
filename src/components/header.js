@@ -15,6 +15,7 @@ class Header extends React.Component {
   constructor(props) {
     super(props);
     this.openMenu=this.openMenu.bind(this);
+    this.closeMenu=this.closeMenu.bind(this);
     this.state = {
       menuPressed: false
     }
@@ -25,9 +26,16 @@ class Header extends React.Component {
     this.resize();
   }
 
+  closeMenu() {
+    if(window.innerWidth > 796) return; //return if not smaller viewport
+
+    const nav = document.getElementById("nav");
+    nav.style.display = "none";
+  }
+
   resize() {
     const nav = document.getElementById("nav");
-    if (window.innerWidth >= 797) {
+    if (window.innerWidth > 796) {
       nav.style.display = "flex";
     }
   }
@@ -64,10 +72,10 @@ class Header extends React.Component {
         <li className={styles.logo}>DL</li>
       </ul>
       <ul className={styles.rightBar}>
-        <li className={styles.left}><a href="#about">about</a></li>
-        <li className={styles.left}><a href="#projects">projects</a></li>
-        <li className={styles.left}><a href="#resume">resume</a></li>
-        <li className={styles.left}><a href="#contact">contact</a></li>
+        <li className={styles.left}><a href="#about" onClick={this.closeMenu}>about</a></li>
+        <li className={styles.left}><a href="#projects" onClick={this.closeMenu}>projects</a></li>
+        <li className={styles.left}><a href="#resume" onClick={this.closeMenu}>resume</a></li>
+        <li className={styles.left}><a href="#contact" onClick={this.closeMenu}>contact</a></li>
       </ul>
     </nav>
     </>
