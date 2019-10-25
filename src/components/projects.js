@@ -9,7 +9,7 @@ const Projects = ({data}) => (
 
       <section>
         <Fade cascade>
-          <h1>Projects</h1>
+          <h2>Projects</h2>
         </Fade>
         <Fade cascade>
           {data.allContentfulProject.edges.map(edges => (

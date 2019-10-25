@@ -4,7 +4,7 @@ body {
 }
 
 .background {
-  height:100vh;
+  height:85vh;
   background-color: #000000;
   flex: 1;
   display: flex;
@@ -14,6 +14,10 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.centerText {
+  text-align: center;
 }
 
 .name {

@@ -5,18 +5,9 @@
   display: flex;
   justify-content: center;
   margin: 1rem 1rem 5rem 1rem;
-  font-size: 1rem;
-  h1 {
-    font-family: 'Quicksand', 'sans-serif';
-    margin: 0 0 1rem 0;
-    font-size: 2rem;
-    text-align: center;
-  }
 }
 
 .left {
-  //writing-mode: vertical-rl;
-  //text-orientation: sideways;
   flex-grow: 1;
 }
 
@@ -35,6 +26,7 @@
   }
   a {
     font-weight: bold;
+    font-size: 24px;
   }
   .date {
     font-style: italic;

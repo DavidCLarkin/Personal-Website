@@ -8,7 +8,7 @@ const About = ({data}) => (
     <div className={styles.about}>
       <section>
         <Fade cascade>
-          <h1>About</h1>
+          <h2>About</h2>
         </Fade>
         <Fade cascade>
           <p>{data.contentfulPost.article.article}</p>

@@ -1,3 +1,22 @@
 * {
   font-family: 'Quicksand', 'sans-serif';
 }
+
+h2 {
+    font-family: 'Quicksand', 'sans-serif';
+    font-size: 4vw;
+    font-weight: 700;
+    //color: #f2f2f2;
+    letter-spacing: 2px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+
+  h2 {
+    font-size: 12vw;
+  }
+}
