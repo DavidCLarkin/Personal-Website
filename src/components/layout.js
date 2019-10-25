@@ -5,6 +5,7 @@ import Header from "./header"
 import About from "./about"
 import Banner from "./banner"
 import Projects from "./projects"
+import Helmet from "react-helmet"
 
 import "../pages/scss/layout.scss"
 
@@ -12,13 +13,17 @@ const Layout = () => {
 
   return (
     <>
+      <Helmet>
+        <title>David Larkin's Portfolio and Personal Website</title>
+        <meta name="description" content="David Larkin is a software developer with a BSc in Entertainment Systems (Game Development) He has experience in Games, Android, iOS, Desktop and Web Apps"></meta>
+      </Helmet>
       <Header />
       <Banner />
-      <a id="about"/> 
+      <a href="#about" id="about"/> 
       <About />
-      <a id="projects"/>
+      <a href="#projects" id="projects"/>
       <Projects />
-      <a id="contact"/>
+      <a href="#contact" id="contact"/>
       <Footer />
     </>
   )
