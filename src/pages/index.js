@@ -9,10 +9,13 @@ const IndexPage = () => (
   </Layout>
 )
 
-WebFont.load({
-  google: {
-    families: ['Quicksand:400,700', 'sans-serif']
-  }
-});
+if(typeof window !== 'undefined')
+{
+  WebFont.load({
+    google: {
+      families: ['Quicksand:400,700', 'sans-serif']
+    }
+  });
+}
 
 export default IndexPage
