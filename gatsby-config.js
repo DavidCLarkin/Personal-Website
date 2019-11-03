@@ -1,4 +1,5 @@
 const dotenv = require('dotenv')
+
 // Remove this in build to try to fix
 if(process.env.NODE_ENV !== 'production') 
 {

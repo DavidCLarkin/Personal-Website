@@ -13,12 +13,15 @@ class Header extends React.Component {
   }
 
   componentDidMount() {
-    window.addEventListener("resize", this.resize.bind(this));
-    this.resize();
+    if(typeof window !== undefined)
+    {
+      window.addEventListener("resize", this.resize.bind(this));
+      this.resize();
+    }
   }
 
   closeMenu() {
-    if(window.innerWidth > 796) return; //return if not smaller viewport
+    if(typeof window !== undefined && window.innerWidth > 796) return; //return if not smaller viewport
 
     const nav = document.getElementById("nav");
     nav.style.display = "none";
@@ -26,13 +29,13 @@ class Header extends React.Component {
 
   resize() {
     const nav = document.getElementById("nav");
-    if (window.innerWidth > 796) {
+    if (typeof window !== undefined && window.innerWidth > 796) {
       nav.style.display = "flex";
     }
   }
   
   openMenu() {
-    if(window.matchMedia("{max-width: 796px}"))
+    if(typeof window !== undefined && window.matchMedia("{max-width: 796px}"))
     {
       const nav = document.getElementById("nav");
       this.setState((prevState) => {
