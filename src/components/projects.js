@@ -2,6 +2,11 @@ import { graphql, StaticQuery } from "gatsby"
 import React from "react"
 import Fade from "react-reveal/Fade"
 import styles from "../pages/scss/projects.module.scss"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
+import {
+  faLink
+} from "@fortawesome/free-solid-svg-icons"
 
 const Projects = ({data}) => (
   <div className={styles.wrapper}>
@@ -11,6 +16,23 @@ const Projects = ({data}) => (
         <Fade cascade>
           <h2>Projects</h2>
         </Fade>
+        <div className={styles.imagesList}>
+            {data.allContentfulProject.edges.map(edges => (
+              <div className={styles.imgContainer} key = {edges.node.title}>
+                <img className={styles.hoverImage} src={edges.node.image.fluid.src} alt={edges.node.image.description}></img>
+                <div className={styles.middle}>
+                  <ul>
+                    <li><a href={edges.node.link} className={styles.text}>
+                      {edges.node.title + " "}
+                      <FontAwesomeIcon icon={faLink}/>
+                    </a></li>
+                    <li><a className={styles.text}>{edges.node.date}</a></li>
+                  </ul>
+                </div>
+              </div>
+            ))}
+        </div>
+        {/*
         <Fade cascade>
           {data.allContentfulProject.edges.map(edges => (
             <section className={styles.project} key={edges.node.title}>
@@ -24,6 +46,7 @@ const Projects = ({data}) => (
             </section>
           ))} 
         </Fade>
+        */}
       </section>
 
       {//<section className={styles.left}>

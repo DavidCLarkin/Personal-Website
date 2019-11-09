@@ -4,7 +4,7 @@ import styles from "../pages/scss/footer.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faLinkedin,
-  faGithub
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons"
 import {
   faEnvelope

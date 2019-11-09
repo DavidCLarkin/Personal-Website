@@ -6,11 +6,11 @@ body {
 }
 
 .nav-bar { 
-  font-family: 'Quicksand', sans-serif;
   display: flex;
   background-color: #000000;
   justify-content: space-between;
   font-size: 24px;
+  font-weight: 500;
   
   ul li {
     display: inline;
@@ -55,6 +55,7 @@ label {
   display: flex;
   justify-content: flex-start;
   align-self: center;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 796px) {
