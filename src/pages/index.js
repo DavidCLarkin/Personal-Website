@@ -8,7 +8,7 @@ const IndexPage = () => (
     <SEO title="Home" />
   </Layout>
 )
-
+/*
 if(typeof window !== 'undefined')
 {
   WebFont.load({
@@ -17,5 +17,6 @@ if(typeof window !== 'undefined')
     }
   });
 }
+*/
 
 export default IndexPage
