@@ -4,7 +4,7 @@ body {
 }
 
 .background {
-  height:85vh;
+  height:100vh;
   background-color: #000000;
   flex: 1;
   display: flex;
@@ -39,7 +39,7 @@ h3 {
 /* If screen is greater than 480px and less than 796px, dont take whole screen*/
 @media screen and (min-height: 480px) and (max-height: 768px) {
   .background {
-    height: 70vh;
+    height: 100vh;
   }
 
 }
