@@ -18,6 +18,7 @@ body {
 
 .centerText {
   text-align: center;
+  height: 40%;
 }
 
 .name {
@@ -55,10 +56,10 @@ h3 {
   display: block;
   box-sizing: border-box;
   border: none;
-  border-right: 3px solid #fff;
-  border-bottom: 3px solid #fff;
+  border-right: 3px solid #A0A0A0;
+  border-bottom: 3px solid #A0A0A0;
   margin: -10px;
-  animation: animate 2s infinite;
+  animation: animate 2.5s infinite;
 }
 
 @keyframes animate 
@@ -79,7 +80,7 @@ h3 {
 {
   top: -10px;
   left: -10px;
-  animation-delay: .6s;
+  animation-delay: .2s;
 }
 
 /* If screen is greater than 480px and less than 796px, dont take whole screen*/
