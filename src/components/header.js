@@ -13,44 +13,51 @@ class Header extends React.Component {
   }
 
   componentDidMount() {
+    /*
     if(typeof window !== "undefined")
     {
       window.addEventListener("resize", this.resize.bind(this));
       this.resize();
     }
+    */
   }
 
-  closeMenu() {
-    if(typeof window !== "undefined" && window.innerWidth > 796) return; //return if not smaller viewport
-
+  
+  closeMenu() {  
     const nav = document.getElementById("nav");
-    nav.style.display = "none";
+    if(nav.style.display == "flex")
+      nav.style.display = "none";
+    
   }
+  
 
+  
   resize() {
+    /*
     const nav = document.getElementById("nav");
     if (typeof window !== "undefined" && window.innerWidth > 796) {
       nav.style.display = "flex";
     }
+    */
   }
   
-  openMenu() {
-    if(typeof window !== "undefined" && window.matchMedia("{max-width: 796px}"))
-    {
-      const nav = document.getElementById("nav");
-      this.setState((prevState) => {
-        return {menuPressed: !prevState.menuPressed};
-      })
+  
+  openMenu() { 
+    const nav = document.getElementById("nav");
+    this.setState((prevState) => {
+      return {menuPressed: !prevState.menuPressed};
+    })
 
-      if(this.state.menuPressed)
-      {
-        nav.style.display = "none";
-      }
-      else {
-        nav.style.display = "flex";
-      }
+    if(this.state.menuPressed)
+    {
+      nav.style.display = "none";
     }
+    else {
+      nav.style.display = "flex";
+    }
+    
   }
+  
 
   render() {
     return (
