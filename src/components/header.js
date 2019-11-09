@@ -55,9 +55,7 @@ class Header extends React.Component {
     else {
       nav.style.display = "flex";
     }
-    
   }
-  
 
   render() {
     return (
@@ -72,9 +70,9 @@ class Header extends React.Component {
         <li className={styles.logo}>DL</li>
       </ul>
       <ul className={styles.rightBar}>
-        <li className={styles.left}><a href="#about" onClick={this.closeMenu}>about</a></li>
-        <li className={styles.left}><a href="#projects" onClick={this.closeMenu}>projects</a></li>
-        <li className={styles.left}><a href="#contact" onClick={this.closeMenu}>contact</a></li>
+        <li className={styles.left}><a href="#about" onClick={this.closeMenu}>About</a></li>
+        <li className={styles.left}><a href="#projects" onClick={this.closeMenu}>Projects</a></li>
+        <li className={styles.left}><a href="#contact" onClick={this.closeMenu}>Contact</a></li>
       </ul>
     </nav>
     </>

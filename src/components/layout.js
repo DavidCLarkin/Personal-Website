@@ -14,7 +14,7 @@ const Layout = () => {
   return (
     <>
       <Helmet>
-        <title>David Larkin's Portfolio and Personal Website</title>
+        <title>David Larkin's Portfolio</title>
         <meta name="description" content="David Larkin is a software developer with a BSc in Entertainment Systems (Game Development) He has experience in Games, Android, iOS, Desktop and Web Apps"></meta>
       </Helmet>
       <Header />

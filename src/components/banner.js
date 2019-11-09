@@ -15,7 +15,7 @@ const Banner= () => (
       </div>
       <div className="indicator">
         <span></span>
-    </div>
+      </div>
     </div>
   </section>
 )
