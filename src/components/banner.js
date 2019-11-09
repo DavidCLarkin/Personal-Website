@@ -13,6 +13,9 @@ const Banner= () => (
           <h3>Software Developer</h3>
         </Fade>
       </div>
+      <div className="indicator">
+        <span></span>
+    </div>
     </div>
   </section>
 )
