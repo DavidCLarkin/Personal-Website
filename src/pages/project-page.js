@@ -37,7 +37,8 @@ const ProjectPage = ({ location }) => {
     )
   }
   else {
-          <>
+    return (
+      <>
         <Helmet>
           <title>David Larkin's Portfolio</title>
           <meta name="description" content="David Larkin is a software developer with a BSc in Entertainment Systems (Game Development) He has experience in Games, Android, iOS, Desktop and Web Apps"></meta>
@@ -45,13 +46,14 @@ const ProjectPage = ({ location }) => {
         </Helmet>
         <Header />
         <Project 
-          title="" 
-          description="" 
-          date=""
-          image=""
+          title={""} 
+          description={""} 
+          date={""}
+          image={""}
           />
         <Footer />
       </>
+    )
   }
 }
 
