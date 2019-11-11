@@ -1,0 +1,17 @@
+@import "base.module.scss";
+@import "wrapper.module.scss";
+
+.project {
+  background: 100%;
+  height: 100vh;
+  margin: 1rem 1rem 5rem 1rem;
+}
+
+h1 {
+  margin-top: 2rem;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+}

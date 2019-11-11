@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import styles from "../pages/scss/header.module.scss"
 
 class Header extends React.Component {
@@ -61,7 +62,7 @@ class Header extends React.Component {
     return (
     <>
     <nav className={styles.mobileMenu} id="mobileMenu">
-      <div className={styles.logo}>DL</div>
+      <Link to={"/index"} className={styles.logo}>DL</Link>
       <button className={styles.menuBtn} onClick={this.openMenu}>&#9776;</button>
     </nav>
 
@@ -70,9 +71,10 @@ class Header extends React.Component {
         <li className={styles.logo}>DL</li>
       </ul>
       <ul className={styles.rightBar}>
-        <li className={styles.left}><a href="#about" onClick={this.closeMenu}>About</a></li>
-        <li className={styles.left}><a href="#projects" onClick={this.closeMenu}>Projects</a></li>
-        <li className={styles.left}><a href="#contact" onClick={this.closeMenu}>Contact</a></li>
+        <li className={styles.left}><a href="/" onClick={this.closeMenu}>Home</a></li>
+        <li className={styles.left}><a href="/#about" onClick={this.closeMenu}>About</a></li>
+        <li className={styles.left}><a href="/#projects" onClick={this.closeMenu}>Projects</a></li>
+        <li className={styles.left}><a href="/#contact" onClick={this.closeMenu}>Contact</a></li>
       </ul>
     </nav>
     </>
