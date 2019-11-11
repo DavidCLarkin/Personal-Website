@@ -5,3 +5,47 @@
  */
 
 // You can delete this file if you're not using it
+
+exports.createPages = ({ graphql, boundActionCreators }) => {
+const path = require(`path`);
+const { createPage } = boundActionCreators
+  return new Promise((resolve, reject) => {
+    graphql(`
+      query {
+        allContentfulProject {
+          edges {
+            node {
+              id
+              title
+              date
+              link
+              description {
+                description              
+              }
+              image {
+                fluid {
+                  src
+                }
+                description
+              }
+            }
+          }
+        }
+      }
+    `  ).then(result => {
+    result.data.allContentfulProject.edges.forEach(({ node }) => {
+      createPage({
+        path: `/${node.title}`,
+        component: path.resolve(`./src/pages/project.js`),
+        context: {
+          projectTitle: node.title
+        },
+      })
+    })
+    resolve()
+    })
+  }).catch(error => {
+    console.log(error)
+    reject()
+  })
+};

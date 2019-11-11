@@ -1,7 +1,7 @@
 import React from "react"
 import Footer from "../components/footer"
 import Header from "../components/header"
-import Project from "../components/project";
+import Project from "./project";
 import Helmet from "react-helmet"
 import "../pages/scss/layout.scss"
 

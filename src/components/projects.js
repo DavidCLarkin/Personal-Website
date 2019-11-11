@@ -27,13 +27,14 @@ const Projects = ({data}) => (
                     <li><a className={styles.text}>{edges.node.date}</a></li>
                     <li>
                       <Link 
-                        to="/project-page"
-                        state={{ 
+                        to={`/${edges.node.title}`}
+                        /*state={{ 
                           title: edges.node.title,
                           description: edges.node.description,
                           date: edges.node.date ,
                           image: edges.node.image.fluid.src
                         }}
+                        */
                         className={styles.text}
                       >{"Read More.."}</Link>
                     </li>
@@ -54,6 +55,7 @@ export default props => (
       allContentfulProject {
         edges {
           node {
+            id
             title
             date
             link
