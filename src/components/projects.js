@@ -24,7 +24,6 @@ const Projects = ({data}) => (
                       {edges.node.title + " "}
                       <FontAwesomeIcon icon={faLink}/>
                     </a></li>
-                    <li><a className={styles.text}>{edges.node.date}</a></li>
                     <li>
                       <Link 
                         to={`/${edges.node.title}`}

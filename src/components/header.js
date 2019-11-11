@@ -13,35 +13,11 @@ class Header extends React.Component {
     }
   }
 
-  componentDidMount() {
-    /*
-    if(typeof window !== "undefined")
-    {
-      window.addEventListener("resize", this.resize.bind(this));
-      this.resize();
-    }
-    */
-  }
-
-  
   closeMenu() {  
     const nav = document.getElementById("nav");
     if(nav.style.display == "flex")
       nav.style.display = "none";
-    
   }
-  
-
-  
-  resize() {
-    /*
-    const nav = document.getElementById("nav");
-    if (typeof window !== "undefined" && window.innerWidth > 796) {
-      nav.style.display = "flex";
-    }
-    */
-  }
-  
   
   openMenu() { 
     const nav = document.getElementById("nav");
