@@ -29,10 +29,10 @@ const ProjectPage = ({ location }) => {
         </Helmet>
         <Header />
         <Project 
-          title={location.state.title} 
-          description={location.state.description} 
-          date={location.state.date}
-          image={location.state.image}
+          title={location.state.title || "nothing"}
+          description={location.state.description || "Nothing"} 
+          date={location.state.date || "Nothing"}
+          image={location.state.image || "Nothing"}
           />
         <Footer />
       </>
