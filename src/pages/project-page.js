@@ -7,16 +7,17 @@ import "../pages/scss/layout.scss"
 
 const ProjectPage = ({ location }) => {
   
-  const state = {
+  /*const state = {
     title: "",
     description: "",
     date:"",
     image: ""
   }
+  */
 
   return (
     <>
-    {console.log("Title " + state.title)}
+    {console.log("Title ")}
       <Helmet>
         <title>David Larkin's Portfolio</title>
         <meta name="description" content="David Larkin is a software developer with a BSc in Entertainment Systems (Game Development) He has experience in Games, Android, iOS, Desktop and Web Apps"></meta>
@@ -24,10 +25,10 @@ const ProjectPage = ({ location }) => {
       </Helmet>
       <Header />
       <Project 
-        title={location.state.title || ""} 
-        description={location.state.description || ""} 
-        date={location.state.date || ""}
-        image={location.state.image || ""}
+        title={location.state.title} 
+        description={location.state.description} 
+        date={location.state.date}
+        image={location.state.image}
         />
       <Footer />
     </>
