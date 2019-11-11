@@ -15,7 +15,7 @@ const ProjectPage = ({ location }) => {
   }
   */
 
-  if(location)
+  if(location.state.title && location.state.description && location.state.date && location.state.image)
   {
     return (
       <>
