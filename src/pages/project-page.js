@@ -15,7 +15,7 @@ const ProjectPage = ({ location }) => {
   }
   */
 
-  if(location.state.title && location.state.description && location.state.date && location.state.image)
+  if(location.state.title)
   {
     return (
       <>
@@ -45,12 +45,6 @@ const ProjectPage = ({ location }) => {
           <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         </Helmet>
         <Header />
-        <Project 
-          title={""} 
-          description={""} 
-          date={""}
-          image={""}
-          />
         <Footer />
       </>
     )
