@@ -24,10 +24,10 @@ const ProjectPage = ({ location }) => {
       </Helmet>
       <Header />
       <Project 
-        title={(location.state.title !== undefined) ? location.state.title : state.title} 
-        description={(location.state.description !== undefined) ? location.state.description : state.description} 
-        date={(location.state.date !== undefined) ? location.state.date : state.date}
-        image={(location.state.image !== undefined) ? location.state.image : state.image}
+        title={location.state.title || ""} 
+        description={location.state.description || ""} 
+        date={location.state.date || ""}
+        image={location.state.image || ""}
         />
       <Footer />
     </>

@@ -29,10 +29,10 @@ const Projects = ({data}) => (
                       <Link 
                         to="/project-page"
                         state={{ 
-                          title: (edges.node.title) ? edges.node.title : "",
-                          description: (edges.node.description) ? edges.node.description : "",
-                          date: (edges.node.date) ? edges.node.date : "" ,
-                          image: (edges.node.image.fluid.src) ? edges.node.image.fluid.src : ""
+                          title: edges.node.title,
+                          description: edges.node.description,
+                          date: edges.node.date ,
+                          image: edges.node.image.fluid.src
                         }}
                         className={styles.text}
                       >{"Read More.."}</Link>
