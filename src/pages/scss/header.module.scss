@@ -30,11 +30,11 @@ body {
 nav {
   a {
     text-decoration: none;
-    color: #f2f1ef;
+    color: #A9A9A9;
     margin: 2rem;
   }
   a:hover {
-    color: #A9A9A9;
+    color: #ffffff;
   }
 }
 
@@ -42,16 +42,13 @@ nav {
   display: none;
 }
 
-label {
-  color: #A9A9A9;
-}
 .mobile-menu {
   display: none;
 }
 
 .logo {
   width: 20%;
-  color: #f2f1ef;
+  color: #ffffff;
   display: flex;
   justify-content: flex-start;
   align-self: center;
@@ -105,7 +102,7 @@ label {
       display: flex;
       background: none;
       justify-content: center;
-      color: #f2f1ef;
+      color: #ffffff;
       text-shadow: 2px 2px 2px #000000;
       mix-blend-mode: difference;
       height: 54px;

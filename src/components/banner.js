@@ -10,6 +10,8 @@ const Banner = () => (
     <div className="star star4"></div>
     <div className="star star5"></div>
     <div className="star star6"></div>
+    <div className="star star7"></div>
+    <div className="star star8"></div>
 
     <div className="container">
       <h1 className="name">David Larkin.</h1>
