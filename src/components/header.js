@@ -38,7 +38,7 @@ class Header extends React.Component {
     return (
     <>
     <nav className={styles.mobileMenu} id="mobileMenu">
-      <Link to={"/index"} className={styles.logo}>DL</Link>
+      <Link to={"/"} className={styles.logo}>DL</Link>
       <button className={styles.menuBtn} onClick={this.openMenu}>&#9776;</button>
     </nav>
 

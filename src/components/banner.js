@@ -2,22 +2,23 @@ import React from "react"
 import "../css/banner.css"
 import Fade from "react-reveal/Fade"
 
-const Banner= () => (
+const Banner = () => (
   <section className="starsBg">
     <div className="star star1"></div>
     <div className="star star2"></div>
     <div className="star star3"></div>
     <div className="star star4"></div>
-    <div className="centerText">
-    <div className="border">
+    <div className="star star5"></div>
+    <div className="star star6"></div>
+
+    <div className="container">
       <h1 className="name">David Larkin.</h1>
-    </div>
-      <Fade cascade>
-        <h3>Software Developer</h3>
-      </Fade>
+      <h3>Software Developer</h3>
     </div>
     <div className="indicator">
-      <span></span>
+      <a href="/#about">
+        <span></span>
+      </a>
     </div>
   </section>
 )

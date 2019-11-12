@@ -20,7 +20,14 @@ section .star {
   left: 0;
   width: 100%;
   height: 100%;
-  animation: animate 5s ease-in-out infinite;
+  animation: indicator 5s ease-in-out infinite;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .star.star1{
@@ -39,40 +46,20 @@ section .star {
   animation-delay: -3s;
   background: url("../images/stars/star4.png");
 }
-
-
-@keyframes animate {
-  0%, 20%, 40%, 60%, 80%, 100%
-  {
-    opacity: 0;
-  }
-
-  10%, 30%, 50%, 70%, 90%
-  {
-    opacity: 1;
-  }
+.star.star5{
+  animation-delay: -4s;
+  background: url("../images/stars/star5.png");
 }
-
-.background {
-  height:100vh;
-  background-color: #000000;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.centerText {
-  text-align: center;
-  height: 40%;
+.star.star6{
+  animation-delay: -5s;
+  background: url("../images/stars/star6.png");
 }
 
 .name {
-  animation: type 2s steps(12), blinker 0.5s step-end alternate infinite 2s;
+  animation: 
+    type 2s steps(12), 
+    blinker 0.5s step-end alternate infinite 2s,
+    removeBorder 1s 3s forwards;
   font-family: 'Poppins', 'sans-serif';
   font-weight: 500;
   color: #f2f2f2;
@@ -83,28 +70,20 @@ section .star {
   border-right: 4px solid #f2f2f2;
 }
 
-@keyframes blinker {
-  50% {
-    border-color: #000000;
-  }
-}
-
-@keyframes type {
-  0% {
-    width: 0ch;
-  }
-  100% {
-    width: 12ch;
-  }
-}
-
-
 h3 {
+  animation: 
+    invisible 3s, 
+    typeh3 2s steps(18) 3s, 
+    blinker 0.5s step-end alternate infinite 3s;
   font-family: 'Poppins', 'sans-serif';
   font-size: 3vw;
   font-weight: 400;
   color: #f2f2f2;
   letter-spacing: 2px;
+  overflow: hidden;
+  white-space: nowrap;
+  align-items: center;
+  border-right: 4px solid #f2f2f2;
 }
 
 .indicator {
@@ -128,28 +107,13 @@ h3 {
   border-right: 3px solid #A0A0A0;
   border-bottom: 3px solid #A0A0A0;
   margin: -10px;
-  animation: animate 2.5s infinite;
-}
-
-@keyframes animate 
-{
-  0%
-  {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100%{
-    opacity: 0;
-  }
+  animation: indicator 2.5s infinite;
 }
 
 .indicator span:nth-child(1)
 {
   top: -10px;
   left: -10px;
-  animation-delay: .2s;
 }
 
 /* If screen is greater than 480px and less than 796px, dont take whole screen*/
@@ -169,3 +133,62 @@ h3 {
     font-size: 4vw;
   }
 }
+
+
+/* Animations  */
+@keyframes indicator 
+{
+  0%
+  {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@keyframes type {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 12ch;
+  }
+}
+
+@keyframes typeh3 {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 18ch;
+  }
+}
+
+@keyframes invisible {
+  0%, 99.9% {
+    color: #000000;
+    border-color: #000000;
+  }
+  100% {
+    color: #f2f2f2;
+    border-color: #f2f2f2;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    border-color: #000000;
+  }
+}
+
+@keyframes removeBorder {
+  100% {
+    border-right: none;
+    border-color: #000000;
+  }
+}
+

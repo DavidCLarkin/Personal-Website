@@ -11,13 +11,14 @@ const Projects = ({data}) => (
     <div className={styles.wrapper}>
       <div className={styles.projects}>
         <section>
-          <Fade cascade>
+          <Fade bottom>
             <h2>Projects</h2>
           </Fade>
+          <Fade bottom>
           <div className={styles.imagesList}>
             {data.allContentfulProject.edges.map(edges => (
               <div className={styles.imgContainer} key = {edges.node.title}>
-                <img className={styles.hoverImage} src={edges.node.image.fluid.src} alt={edges.node.image.description}></img>
+                  <img className={styles.hoverImage} src={edges.node.image.fluid.src} alt={edges.node.image.description}></img>
                 <div className={styles.middle}>
                   <ul>
                     <li><a href={edges.node.link} className={styles.text}>
@@ -42,6 +43,7 @@ const Projects = ({data}) => (
               </div>
               ))}
           </div>
+          </Fade>
         </section>
       </div>
     </div>

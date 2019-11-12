@@ -6,9 +6,9 @@
 
 // You can delete this file if you're not using it
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
+exports.createPages = ({ graphql, actions }) => {
 const path = require(`path`);
-const { createPage } = boundActionCreators
+const { createPage } = actions
   return new Promise((resolve, reject) => {
     graphql(`
       query {

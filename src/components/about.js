@@ -7,14 +7,13 @@ const About = ({data}) => (
   <div className={styles.wrapper}>
     <div className={styles.about}>
       <section>
-        <Fade cascade>
+        <Fade bottom>
           <h2>About</h2>
         </Fade>
-        <Fade cascade>
+        <Fade bottom>
           <p>{data.contentfulPost.article.article}</p>
         </Fade>
       </section>
-
     </div>
   </div>
 )

@@ -13,13 +13,13 @@ import {
 const Footer = () => (
   <footer className={styles.footerSection}>
 
-    <Fade cascade>
+    <Fade bottom>
     <div>
       <h1>Contact</h1>
     </div>
     </Fade>
 
-    <Fade cascade>
+    <Fade bottom>
 		<div className={styles.clear}>
       <a href="https://github.com/DavidCLarkin" className="Github">
         <FontAwesomeIcon icon={faGithub} size="2x"/>
