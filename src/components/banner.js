@@ -1,6 +1,7 @@
 import React from "react"
 import "../css/banner.css"
 import Fade from "react-reveal/Fade"
+import Indicator from "./indicator"
 
 const Banner = () => (
   <section className="starsBg">
@@ -16,11 +17,9 @@ const Banner = () => (
     <div className="container">
       <h1 className="name">David Larkin.</h1>
       <h3>Software Developer</h3>
-    </div>
-    <div className="indicator">
-      <a href="/#about">
-        <span></span>
-      </a>
+      <Fade bottom>
+        <Indicator href="/#about"/>
+      </Fade>
     </div>
   </section>
 )

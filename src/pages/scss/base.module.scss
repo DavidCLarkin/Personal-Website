@@ -8,12 +8,35 @@ h2 {
     font-family: 'Poppins', 'sans-serif';
     font-size: 4vw;
     font-weight: 700;
-    //color: #f2f2f2;
+    color: #ffffff;
     letter-spacing: 2px;
 }
 
 p {
   font-size: 1rem;
+  color:#ffffff;
+}
+
+.heading {
+  display: inline-block;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.headingContainer {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #A9A9A9;
+  margin: 2rem;
+}
+
+a:hover {
+  color: #ffffff;
 }
 
 @media screen and (max-width: 480px) {

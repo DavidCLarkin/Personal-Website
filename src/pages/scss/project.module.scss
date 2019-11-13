@@ -1,17 +1,56 @@
 @import "base.module.scss";
 @import "wrapper.module.scss";
 
-.project {
-  background: 100%;
+.project 
+{
   height: 100vh;
   margin: 1rem 1rem 5rem 1rem;
+  align-items: center;
 }
 
-h1 {
-  margin-top: 2rem;
+h2 
+{
+  //margin: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
-img {
-  height: 300px;
-  width: 300px;
+.info 
+{
+  display: flex;
+  justify-content: space-evenly;
 }
+
+img 
+{
+  max-height: 300px;
+  max-width: 300px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.image 
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hover 
+{
+  margin: 0;
+}
+
+.hover:hover 
+{
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 796px)
+{
+  img {
+    max-height: 150px;
+  }
+}
+

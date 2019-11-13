@@ -6,14 +6,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faLink
 } from "@fortawesome/free-solid-svg-icons"
+import Indicator from "./indicator"
 
 const Projects = ({data}) => (
     <div className={styles.wrapper}>
       <div className={styles.projects}>
         <section>
-          <Fade bottom>
-            <h2>Projects</h2>
-          </Fade>
+          <div className={styles.headingContainer}>
+            <Fade bottom>
+              <h2 className={styles.heading}>Projects</h2>
+            </Fade>
+          </div>
           <Fade bottom>
           <div className={styles.imagesList}>
             {data.allContentfulProject.edges.map(edges => (
@@ -28,13 +31,6 @@ const Projects = ({data}) => (
                     <li>
                       <Link 
                         to={`/${edges.node.title}`}
-                        /*state={{ 
-                          title: edges.node.title,
-                          description: edges.node.description,
-                          date: edges.node.date ,
-                          image: edges.node.image.fluid.src
-                        }}
-                        */
                         className={styles.text}
                       >{"Read More.."}</Link>
                     </li>
@@ -43,6 +39,7 @@ const Projects = ({data}) => (
               </div>
               ))}
           </div>
+          <Indicator href="#contact"/>
           </Fade>
         </section>
       </div>

@@ -12,6 +12,8 @@ export const query = graphql`
         node {
           id
           title
+          date
+          link
           description {
             description
           }
@@ -34,20 +36,23 @@ class Project extends React.Component {
   render() {
     return ( 
       <>
-      
-      {console.log(this.project)}
         <Helmet>
-          <title>David Larkin's Portfolio</title>
+          <title>{this.project.title}</title>
           <meta name="description" content="David Larkin is a software developer with a BSc in Entertainment Systems (Game Development) He has experience in Games, Android, iOS, Desktop and Web Apps"></meta>
           <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         </Helmet>
         <Header />
         <section className={styles.wrapper}>
           <div className={styles.project}>
-            <h1>{this.project.title}</h1>
-            <h4>{this.project.date}</h4>
+            <h2>{this.project.title}</h2>
+            <div className={styles.info}>
+              <p>{this.project.date}</p>
+              <a className={styles.hover} href={this.project.link}>Link To Project</a>
+            </div>
+            <div className={styles.image}>
+              <img src={this.project.image.fluid.src} alt={this.project.image.description}></img>
+            </div>
             <p>{this.project.description.description}</p>
-            <img src={this.project.image.fluid.src} alt={this.project.image.description}></img>
           </div>
         </section>
         <Footer />
@@ -57,24 +62,3 @@ class Project extends React.Component {
 }
 
 export default Project;
-
-
-/*
-const Project =({ title, description, date, image}) => {
-
-  return (
-    <>
-    <section className={styles.wrapper}>
-      <div className={styles.project}>
-        <h1>{title}</h1>
-        <h4>{date}</h4>
-        <p>{description.description}</p>
-        <img src={image} alt="test"></img>
-      </div>
-    </section>
-    </>
-  );
-}
-
-export default Project;
-*/
