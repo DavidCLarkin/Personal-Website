@@ -21,10 +21,10 @@ h2
   justify-content: space-evenly;
 }
 
-img 
+.pic 
 {
   max-height: 300px;
-  max-width: 300px;
+  max-width: 100%;
   object-fit: cover;
   width: 100%;
   height: auto;
@@ -49,7 +49,7 @@ img
 
 @media screen and (max-width: 796px)
 {
-  img {
+  .pic {
     max-height: 150px;
   }
 }

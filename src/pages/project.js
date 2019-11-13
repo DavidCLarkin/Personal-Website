@@ -50,7 +50,7 @@ class Project extends React.Component {
               <a className={styles.hover} href={this.project.link}>Link To Project</a>
             </div>
             <div className={styles.image}>
-              <img src={this.project.image.fluid.src} alt={this.project.image.description}></img>
+              <img className={styles.pic} src={this.project.image.fluid.src} alt={this.project.image.description}></img>
             </div>
             <p>{this.project.description.description}</p>
           </div>
