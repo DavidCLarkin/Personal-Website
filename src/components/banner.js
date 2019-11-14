@@ -21,7 +21,7 @@ const Banner = () => (
       <h3>Software Developer</h3>
     </div>
     <Fade bottom>
-      <Indicator href="/#about"/>
+        <Indicator href="/#about"/>
     </Fade>
   </section>
 )
