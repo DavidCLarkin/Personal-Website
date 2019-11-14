@@ -19,10 +19,10 @@ const Banner = () => (
     <div className="container">
       <h1 className="name">David Larkin.</h1>
       <h3>Software Developer</h3>
-    </div>
-    <Fade bottom>
+      <Fade bottom>
         <Indicator href="/#about"/>
-    </Fade>
+      </Fade>
+    </div>
   </section>
 )
 
