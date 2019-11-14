@@ -12,6 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 section .star {
@@ -97,6 +98,21 @@ h3 {
 
 /* If screen is greater than 480px and less than 796px, dont take whole screen*/
 @media screen and (min-height: 480px) and (max-height: 768px) {
+  
+  h3 {
+    animation: 
+      invisible 3.2s, 
+      typeh3 2s steps(20) 3s, 
+      blinker 0.5s step-end alternate infinite 3s;
+  }
+  
+  .name {
+    animation: 
+      type 2.7s steps(20), 
+      blinker 0.5s step-end alternate infinite 2s,
+      removeBorder 1s 3s forwards;
+  }
+
   .background {
     height: 100vh;
   }

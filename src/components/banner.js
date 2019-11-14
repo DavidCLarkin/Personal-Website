@@ -17,10 +17,10 @@ const Banner = () => (
     <div className="container">
       <h1 className="name">David Larkin.</h1>
       <h3>Software Developer</h3>
-      <Fade bottom>
+    </div>
+    <Fade bottom>
         <Indicator href="/#about"/>
       </Fade>
-    </div>
   </section>
 )
 

@@ -8,15 +8,11 @@ const About = ({data}) => (
   <div className={styles.wrapper}>
     <div className={styles.about}>
       <section>
-        <div className={styles.headingContainer}>
-          <Fade bottom>
+        <Fade bottom>
+          <div className={styles.headingContainer}>
             <h2 className={styles.heading}>About</h2>
-          </Fade>
-        </div>
-        <Fade bottom>
+          </div>
           <p className={styles.paragraphCenter}>{data.contentfulPost.article.article}</p>
-        </Fade>
-        <Fade bottom>
           <Indicator href="#projects"/>
         </Fade>
       </section>
