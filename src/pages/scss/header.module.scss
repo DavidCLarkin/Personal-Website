@@ -8,7 +8,7 @@ body {
 .nav-bar { 
   display: flex;
   background-color: #000000;
-  justify-content: space-between;
+  justify-content: space-evenly;
   font-size: 24px;
   font-weight: 500;
   
@@ -17,14 +17,16 @@ body {
   }
 }
 
+.wrapper {
+  max-width: 100%; // so it stretches the whole width
+}
+
 .left-bar {
-  //justify-content: left;
   margin: 1rem;
 }
 
 .right-bar {
   margin: 1rem;
-  //justify-content: right;
 }
 
 nav {
