@@ -6,11 +6,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   margin: 0 1rem 0 1rem;
 
 }
 
 .paragraphCenter {
   text-align: center;
+}
+
+@media screen and (min-height: 568px) and (min-width: 375px) {
+  .about {
+    height: 100vh;
+  }
 }

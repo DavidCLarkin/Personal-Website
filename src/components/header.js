@@ -15,7 +15,7 @@ class Header extends React.Component {
 
   closeMenu() {  
     const nav = document.getElementById("nav");
-    if(nav.style.display == "flex")
+    if(nav.style.display === "flex")
       nav.style.display = "none";
   }
   
