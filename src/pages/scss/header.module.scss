@@ -7,7 +7,7 @@ body {
 
 .nav-bar { 
   display: flex;
-  background-color: #000000;
+  background: transparent;
   justify-content: space-evenly;
   font-size: 24px;
   font-weight: 500;
@@ -19,6 +19,7 @@ body {
 
 .wrapper {
   max-width: 100%; // so it stretches the whole width
+  z-index: 100;
 }
 
 .left-bar {
@@ -58,7 +59,6 @@ nav {
 }
 
 @media screen and (max-width: 796px) {
-
   .nav-bar {
     display: none;
     font-size: 32px;
@@ -69,7 +69,8 @@ nav {
     justify-content: center;
     z-index: 1;
     top: 0;
-    background-color: rgba(0,0,0,0.95);
+    right: 20%;
+    background: rgba(0,0,0,0.95);
 
     ul li {
       margin-bottom: 1.5rem;

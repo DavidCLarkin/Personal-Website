@@ -2,9 +2,11 @@ import React from "react"
 import "../css/banner.css"
 import Fade from "react-reveal/Fade"
 import Indicator from "./indicator"
+import Header from "./header"
 
 const Banner = () => (
   <section className="starsBg">
+    <Header />
     <div className="star star1"></div>
     <div className="star star2"></div>
     <div className="star star3"></div>
@@ -19,8 +21,8 @@ const Banner = () => (
       <h3>Software Developer</h3>
     </div>
     <Fade bottom>
-        <Indicator href="/#about"/>
-      </Fade>
+      <Indicator href="/#about"/>
+    </Fade>
   </section>
 )
 
