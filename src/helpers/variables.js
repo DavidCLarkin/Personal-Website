@@ -1,6 +1,6 @@
 const particle = {
   particles: {
-    number: { value: 50, density: { enable: true, value_area: 500 } },
+    number: { value: 55, density: { enable: true, value_area: 500 } },
       color: { value: "#ABC6D0" },
       shape: {
         type: "edge",
