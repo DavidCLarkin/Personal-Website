@@ -1,10 +1,12 @@
+@import "./base.module.scss";
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
 body {
-  background-color: #131313;
+  background-color: $backgroundColor;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
