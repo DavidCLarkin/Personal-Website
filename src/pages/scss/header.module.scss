@@ -37,11 +37,11 @@ body {
 nav {
   a {
     text-decoration: none;
-    color: #A9A9A9;
+    color: $linkColor;
     margin: 2rem;
   }
   a:hover {
-    color: #ffffff;
+    color: $hoverLinkColor;
   }
 }
 
@@ -55,7 +55,7 @@ nav {
 
 .logo {
   width: 20%;
-  color: #ffffff;
+  color: $hoverLinkColor;
   display: flex;
   justify-content: flex-start;
   align-self: center;
@@ -87,7 +87,7 @@ nav {
   }
 
   .mobile-menu {
-    background: #000000;
+    background: transparent;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -104,8 +104,8 @@ nav {
       display: flex;
       background: none;
       justify-content: center;
-      color: #ffffff;
-      text-shadow: 2px 2px 2px #000000;
+      color: $hoverLinkColor;
+      text-shadow: 2px 2px 2px $black;
       mix-blend-mode: difference;
       height: 54px;
       align-self: center;

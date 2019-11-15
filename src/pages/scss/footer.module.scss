@@ -1,7 +1,7 @@
 @import 'base.module.scss';
 
 .footer-section {
-  background-color: #000000;
+  background-color: $black;
   width: 100%;
   display:flex;
   flex-direction: column;
@@ -15,11 +15,11 @@
   }
 
   a:hover {
-    color: #ffffff;
+    color: $hoverLinkColor;
   }
 
   h1 {
     font-family: 'Poppins', 'sans-serif';
-    color: #f2f2f2;
+    color: $baseTextColor;
   }
 }

@@ -25,9 +25,9 @@ const particle = {
         enable: true,
         speed: 2,
         direction: "none",
-        random: true,
+        random: false,
         straight: false,
-        out_mode: "bounce",
+        out_mode: "none",
         bounce: false,
         attract: {
           enable: true,
@@ -39,18 +39,18 @@ const particle = {
     interactivity: {
       detect_on:"canvas",
       events: {
-        onhover: {enable:true, mode: "bubble"},
+        onhover: {enable:true, mode: "repulse"},
       },
       mode: {
         grab: { distance: 400, line_linked: {opacity:1 } },
         bubble: {
-          distance: 300,
+          distance: 100,
           size: 0.1,
           duration: 1,
           opacity: 0.1,
           speed: 1
         },
-        repulse: { distance: 200, duration: 0.4},
+        repulse: { distance: 1, duration: 0.4},
         push: { particles_nb: 2 },
         remove: { particles_nb: 2 }
       }

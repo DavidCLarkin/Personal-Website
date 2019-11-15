@@ -11,7 +11,7 @@ const Banner = () => (
     <Header />
     <Particles 
       width={'100%'} 
-      height={'calc(100vh + 200px)'}
+      height={'calc(100vh + 100px)'}
       params={params} 
       />
     <h1 className={styles.name}>David Larkin.</h1>
