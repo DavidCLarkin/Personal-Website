@@ -57,8 +57,19 @@ class Project extends React.Component {
             <div className={styles.image}>
               <img className={styles.pic} src={this.project.image.fluid.src} alt={this.project.image.description}></img>
             </div>
+
+            <div>
+            <h4 className={styles.subheading}>About this Project</h4>
             <p>{this.project.description.description}</p>
+
+            <h4 className={styles.subheading}>Technologies Used</h4>
+            <ul className={styles.list}>
+              <li>Lorem</li>
+              <li>Ipsum</li>
+            </ul>
+            </div>
           </div>
+
         </section>
         <Footer />
       </>

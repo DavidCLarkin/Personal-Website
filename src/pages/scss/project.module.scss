@@ -33,6 +33,26 @@
   display: flex;
 }
 
+.subheading {
+  display: inline-block;
+  font-size: 3rem;
+  color: $baseTextColor;
+  border-top: 2px solid $accentColor;
+  border-bottom: 2px solid $accentColor;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.list {
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  li {
+    color: $baseTextColor;
+    font-size: 1rem;
+  }
+}
+
 .hover {
   margin: 0;
 }
@@ -42,9 +62,20 @@
 }
 
 
-@media screen and (max-width: 796px){
+@media screen and (max-width: 768px){
   .pic {
     max-height: 300px;
   }
+
+  .subheading {
+    font-size: 2rem;
+  }
+
+  .list {
+    li {
+      font-size: 1.5rem;
+    }
+  }
+
 }
 

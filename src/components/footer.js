@@ -30,6 +30,7 @@ const Footer = () => (
             <FontAwesomeIcon icon={faEnvelope} size="2x"/>
           </a>
         </div>
+        <p className={styles.footnote}>© 2019 David Larkin</p>
       </Fade>
     </footer> 
   </section>
