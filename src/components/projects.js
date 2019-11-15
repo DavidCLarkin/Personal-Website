@@ -21,18 +21,18 @@ const Projects = ({data}) => (
           <div className={styles.imagesList}>
             {data.allContentfulProject.edges.map(edges => (
               <div className={styles.imgContainer} key = {edges.node.title}>
-                  <img className={styles.hoverImage} src={edges.node.image.fluid.src} alt={edges.node.image.description}></img>
+                <img className={styles.hoverImage} src={edges.node.image.fluid.src} alt={edges.node.image.description}></img>
                 <div className={styles.middle}>
                   <ul>
                     <li><a href={edges.node.link} className={styles.text}>
-                      {edges.node.title + " "}
                       <FontAwesomeIcon icon={faLink}/>
+                      {" " + edges.node.title}
                     </a></li>
                     <li>
                       <Link 
                         to={`/${edges.node.title}`}
                         className={styles.text}
-                      >{"Read More.."}</Link>
+                      >{"Read More"}</Link>
                     </li>
                   </ul>
                 </div>

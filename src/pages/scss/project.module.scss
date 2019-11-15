@@ -1,56 +1,50 @@
 @import "base.module.scss";
 @import "wrapper.module.scss";
 
-.project 
-{
-  height: 100vh;
-  margin: 1rem 1rem 5rem 1rem;
+.project {
+  height: 100%;
+  margin: 5rem 1rem 5rem 1rem;
   align-items: center;
+  padding-bottom: 5rem;
+  text-align: center;
 }
 
-h2 
-{
-  //margin: 2rem;
-  display: flex;
-  justify-content: center;
-}
-
-.info 
-{
+.info {
   display: flex;
   justify-content: space-evenly;
 }
 
-.pic 
-{
-  max-height: 300px;
+.bar {
+  border: 1px solid #ABC6D0;
+  height: 1.5em;
+}
+
+.pic {
+  max-height: 500px;
   max-width: 100%;
   object-fit: cover;
   width: 100%;
   height: auto;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.image 
-{
+.image {
   width: 100%;
   display: flex;
-  justify-content: center;
 }
 
-.hover 
-{
+.hover {
   margin: 0;
 }
 
-.hover:hover 
-{
+.hover:hover {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 796px)
-{
+
+@media screen and (max-width: 796px){
   .pic {
-    max-height: 150px;
+    max-height: 300px;
   }
 }
 

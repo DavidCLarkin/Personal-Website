@@ -12,7 +12,11 @@ const About = ({data}) => (
           <div className={styles.headingContainer}>
             <h2 className={styles.heading}>About</h2>
           </div>
-          <p className={styles.paragraphCenter}>{data.contentfulPost.article.article}</p>
+          <div className={styles.split}>
+            <p className={styles.paragraphLeft}>{data.contentfulPost.article.article}</p>
+            <div className={styles.bar}></div>
+            <p className={styles.paragraphRight}>{data.contentfulPost.articleRight.articleRight}</p>
+          </div>
           <Indicator href="#projects"/>
         </Fade>
       </section>
@@ -30,6 +34,9 @@ export default props => (
         subtitle
         article {
           article
+        }
+        articleRight{
+          articleRight
         }
       }
     }
