@@ -11,6 +11,7 @@ body {
   justify-content: space-evenly;
   font-size: 24px;
   font-weight: 500;
+  transition: 0.5s;
 
   ul {
     z-index: 100;
@@ -35,6 +36,7 @@ body {
 }
 
 nav {
+
   a {
     text-decoration: none;
     color: $linkColor;
@@ -51,6 +53,7 @@ nav {
 
 .mobile-menu {
   display: none;
+
 }
 
 .logo {
@@ -63,9 +66,12 @@ nav {
 }
 
 @media screen and (max-width: 796px) {
+
   .nav-bar {
-    display: none;
+    display: flex;
     font-size: 32px;
+    opacity: 0;
+    visibility: hidden;
     width: 100%;
     position: fixed;
     height: 100%;
@@ -75,6 +81,7 @@ nav {
     top: 0;
     right: 20%;
     background: rgba(0,0,0,0.95);
+
 
     ul li {
       margin-bottom: 1.5rem;

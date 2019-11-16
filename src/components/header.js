@@ -15,8 +15,11 @@ class Header extends React.Component {
 
   closeMenu() {  
     const nav = document.getElementById("nav");
-    if(nav.style.display === "flex")
-      nav.style.display = "none";
+    if(nav.style.opacity == 1)
+    {
+      nav.style.opacity = 0;
+      nav.style.visibility = "hidden";
+    }
   }
   
   openMenu() { 
@@ -27,10 +30,14 @@ class Header extends React.Component {
 
     if(this.state.menuPressed)
     {
-      nav.style.display = "none";
+      //nav.style.display = "none";
+      nav.style.opacity = 0;
+      nav.style.visibility = "hidden";
     }
     else {
-      nav.style.display = "flex";
+      nav.style.opacity = 1;
+      nav.style.visibility = "visible";
+      //nav.style.display = "flex";
     }
   }
 
