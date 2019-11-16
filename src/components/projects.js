@@ -17,29 +17,30 @@ const Projects = ({data}) => (
               <h2 className={styles.heading}>Projects</h2>
             </Fade>
           </div>
+
           <Fade bottom>
-          <div className={styles.imagesList}>
-            {data.allContentfulProject.edges.map(edges => (
-              <div className={styles.imgContainer} key = {edges.node.title}>
-                <img className={styles.hoverImage} src={edges.node.image.fluid.src} alt={edges.node.image.description}></img>
-                <div className={styles.middle}>
-                  <ul>
-                    <li><a href={edges.node.link} className={styles.text}>
-                      <FontAwesomeIcon icon={faLink}/>
-                      {" " + edges.node.title}
-                    </a></li>
-                    <li>
-                      <Link 
-                        to={`/${edges.node.title}`}
-                        className={styles.text}
-                      >{"Read More"}</Link>
-                    </li>
-                  </ul>
+            <div className={styles.imagesList}>
+              {data.allContentfulProject.edges.map(edges => (
+                <div className={styles.imgContainer} key = {edges.node.title}>
+                  <img className={styles.hoverImage} src={edges.node.image.fluid.src} alt={edges.node.image.description}></img>
+                  <div className={styles.middle}>
+                    <ul>
+                      <li><a href={edges.node.link} className={styles.text}>
+                        <FontAwesomeIcon icon={faLink}/>
+                        {" " + edges.node.title}
+                      </a></li>
+                      <li>
+                        <Link 
+                          to={`/${edges.node.title}`}
+                          className={styles.text}
+                        >{"Read More"}</Link>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              ))}
-          </div>
-          <Indicator href="#contact"/>
+                ))}
+            </div>
+            <Indicator href="#contact"/>
           </Fade>
         </section>
       </div>
