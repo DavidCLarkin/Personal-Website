@@ -8,6 +8,7 @@ import {
   faCalendarAlt,
   faLink
 } from "@fortawesome/free-solid-svg-icons"
+import { Gallery, GalleryImage } from 'react-gesture-gallery'
 
 export const query = graphql`
   query ProjectDetails($projectTitle: String) {
@@ -18,10 +19,18 @@ export const query = graphql`
           title
           date
           link
+          technologies
           description {
             description
           }
           image {
+            fluid {
+              src
+            }
+            description
+          }
+          imageTwo {
+            id
             fluid {
               src
             }
@@ -34,6 +43,31 @@ export const query = graphql`
   `
 
 class Project extends React.Component {
+
+  constructor(props){
+    super(props)
+    this.state = {
+      index: 0
+    }
+  }
+
+  scrollImage() {
+    if(this.state.index === this.project.imageTwo.length-1) {
+      this.setState({index: 0})
+    }
+    else {
+      let i = this.state.index
+      i += 1
+      this.setState({index: i})
+    }
+  }
+
+  componentDidMount() {
+    this.timerID = setInterval(
+      () => this.scrollImage(),
+      3000
+    );
+  }
   
   project = this.props.data.allContentfulProject.edges[0].node;
 
@@ -54,8 +88,27 @@ class Project extends React.Component {
               <div className={styles.bar}></div>
               <a className={styles.hover} href={this.project.link}><FontAwesomeIcon icon={faLink}/>{" Link To Project"}</a>
             </div>
-            <div className={styles.image}>
-              <img className={styles.pic} src={this.project.image.fluid.src} alt={this.project.image.description}></img>
+            <div className={styles.gallery}>
+              <Gallery
+                style={{
+                  position: "relative",
+                  height: '100%',
+                  width: '100%',
+                  objectFit: 'cover'
+                }} 
+                index={this.state.index}
+                onRequestChange={i => {
+                  this.setState({index: i});
+                }}>
+                {this.project.imageTwo.map(image => (
+                  <GalleryImage 
+                    style={{
+                      maxHeight:'400px',
+                    }}
+                    src={image.fluid.src}
+                    objectFit="contain" />
+                ))}
+              </Gallery>
             </div>
 
             <div>
@@ -64,8 +117,11 @@ class Project extends React.Component {
 
             <h4 className={styles.subheading}>Technologies Used</h4>
             <ul className={styles.list}>
-              <li>Lorem</li>
-              <li>Ipsum</li>
+              {this.project.technologies.map((item, index) => (
+                <li key={index}>
+                  {item}
+                </li>
+              ))}
             </ul>
             </div>
           </div>
