@@ -73,15 +73,16 @@ class Project extends React.Component {
 
   render() {
     return ( 
-      <>
-        <Helmet>
-          <title>{this.project.title}</title>
-          <meta name="description" content="David Larkin is a software developer with a BSc in Applied Computing (Game Development). He has experience in Games, Android, iOS, Desktop and Web Apps"></meta>
-          <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-        </Helmet>
-        <Header />
-        <section className={styles.wrapper}>
-          <div className={styles.project}>
+    <>
+      <Helmet>
+        <title>{this.project.title}</title>
+        <meta name="description" content="David Larkin is a software developer with a BSc in Applied Computing (Game Development). He has experience in Games, Android, iOS, Desktop and Web Apps"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+      </Helmet>
+      <Header />
+      <section className={styles.wrapper}>
+        <div className={styles.project}>
+          <section className={styles.padding}>
             <h2 className={styles.heading}>{this.project.title}</h2>
             <div className={styles.info}>
               <p><FontAwesomeIcon icon={faCalendarAlt}/>{" " + this.project.date}</p>
@@ -110,11 +111,13 @@ class Project extends React.Component {
                 ))}
               </Gallery>
             </div>
+          </section>
 
-            <div>
+          <section className={styles.padding}>
             <h4 className={styles.subheading}>About this Project</h4>
             <p>{this.project.description.description}</p>
-
+          </section>
+          <section className={styles.padding}>
             <h4 className={styles.subheading}>Technologies Used</h4>
             <ul className={styles.list}>
               {this.project.technologies.map((item, index) => (
@@ -123,11 +126,11 @@ class Project extends React.Component {
                 </li>
               ))}
             </ul>
-            </div>
-          </div>
+          </section>
+        </div>
 
-        </section>
-        <Footer />
+      </section>
+      <Footer />
       </>
     )
   }

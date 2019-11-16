@@ -44,6 +44,10 @@
   padding-bottom: 15px;
 }
 
+.padding {
+  padding: $sectionPadding;
+}
+
 .list {
   list-style: none;
   justify-content: center;

@@ -7,9 +7,16 @@ $accentColor: #ABC6D0;
 $backgroundColor: #1b1b1b;
 $backgroundRGBA: rgba($color: #000000, $alpha: 0.9);
 $black: #000000;
+$sectionPadding: 3rem 0 3rem 0;
 
 * {
   font-family: 'Poppins', 'sans-serif';
+}
+
+.altBackground {
+  width: 100%;
+  background-color: #161616;
+  padding: $sectionPadding;
 }
 
 h2 {
