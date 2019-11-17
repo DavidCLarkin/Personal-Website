@@ -20,11 +20,9 @@ const Layout = () => {
       </Helmet>
 
       <Banner />
-      <a href="#about" id="about"/> 
       <About />
       <a href="#projects" id="projects"/>
       <Projects />
-      <a href="#contact" id="contact"/>
       <Footer />
     </>
   )

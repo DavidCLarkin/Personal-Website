@@ -59,8 +59,10 @@
 }
 
 .gallery {
-  padding-top: 1rem;
-  padding-bottom: 2rem;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: center;
+  padding-top: 2rem;
 }
 
 .hover {
@@ -77,6 +79,10 @@
     max-height: 300px;
   }
 
+  .gallery {
+    width: 100%;
+  }
+
   .subheading {
     font-size: 2rem;
   }
@@ -85,6 +91,12 @@
     li {
       font-size: 1.5rem;
     }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .info p, .info a {
+    font-size: 0.8rem;
   }
 
 }

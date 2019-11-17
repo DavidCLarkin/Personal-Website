@@ -17,17 +17,6 @@ const Banner = () => (
     <h1 className={styles.name}>David Larkin.</h1>
     <h3>Software Developer</h3>
     <Indicator href="/#about" higherIndicator={true}/>
-
-
-    {/*<div className="star star1"></div>
-    <div className="star star2"></div>
-    <div className="star star3"></div>
-    <div className="star star4"></div>
-    <div className="star star5"></div>
-    <div className="star star6"></div>
-    <div className="star star7"></div>
-    <div className="star star8"></div>*/}
-
   </div>
 )
 

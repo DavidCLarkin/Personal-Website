@@ -7,6 +7,8 @@ import Indicator from "./indicator"
 const About = ({data}) => (
   <div className={styles.altBackground}>
     <div className={styles.wrapper}>
+    <a href="#about" id="about"/> 
+
       <div className={styles.about}>
         <section>
           <Fade bottom>

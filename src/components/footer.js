@@ -13,6 +13,7 @@ import {
 const Footer = () => (
   <section className={styles.wrapper}>
     <footer className={styles.footerSection}>
+    <a href="#contact" id="contact"/>
 
       <Fade bottom>
         <div>
