@@ -38,7 +38,7 @@ class ProjectGallery extends React.Component {
             <FontAwesomeIcon icon={faCalendarAlt} />
             {" " + this.props.data.date}
           </p>
-          <div className={styles.bar}></div>
+          <div className={styles.bar} />
           <a className={styles.hover} href={this.props.data.link}>
             <FontAwesomeIcon icon={faLink} />
             {" Link To Project"}

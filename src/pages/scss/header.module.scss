@@ -56,8 +56,22 @@ nav {
 
 }
 
+.logoBrowser {
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .logo {
-  width: 20%;
+  img {
+    margin-bottom: 0;
+    width: 40px;
+    height: 40px;
+  }
+
+  width: 15%;
+  padding: 0;
   color: $hoverLinkColor;
   display: flex;
   justify-content: flex-start;
