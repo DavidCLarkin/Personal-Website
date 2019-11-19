@@ -4,4 +4,4 @@ A personal website to feature projects, a link to any relevant social medias and
 
 Coded and designed by me in HTML/CSS and JavaScript. Making use of React, Gatsby and many other libraries.
 
-A temporary link of the built site can be found here: https://practical-clarke-e5ba2d.netlify.com/
+A link to the live site can be found here: https://davidlarkin.dev/
