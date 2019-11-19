@@ -49,6 +49,7 @@ a {
   text-decoration: none;
   color: $hoverLinkColor;
   margin: 2rem;
+  transition: .3s ease;
 }
 
 a:hover {

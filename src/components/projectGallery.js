@@ -65,7 +65,8 @@ class ProjectGallery extends React.Component {
                   objectFit: "cover",
                 }}
                 src={image.fluid.src}
-                objectFit="contain"
+                key={image.id}
+                alt={image.description}
               />
             ))}
           </Gallery>
