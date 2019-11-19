@@ -1,5 +1,4 @@
 import React from "react"
-import Fade from "react-reveal/Fade"
 import Indicator from "./indicator"
 import Header from "./header"
 import Particles from "react-particles-js"

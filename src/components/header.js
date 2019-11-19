@@ -19,7 +19,7 @@ class Header extends React.Component {
 
   closeMenu() {  
     const nav = document.getElementById("nav");
-    if(nav.style.opacity == 1)
+    if(nav.style.opacity === 1)
     {
       nav.style.opacity = 0;
       nav.style.visibility = "hidden";

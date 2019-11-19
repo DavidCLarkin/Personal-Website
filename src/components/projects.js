@@ -1,4 +1,4 @@
-import { graphql, StaticQuery, Link} from "gatsby"
+import { graphql, StaticQuery} from "gatsby"
 import React from "react"
 import Fade from "react-reveal/Fade"
 import styles from "../pages/scss/projects.module.scss"

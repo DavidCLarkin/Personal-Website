@@ -33,6 +33,10 @@ p {
   color: $baseTextColor;
 }
 
+.accessibilityLink {
+  font-size: 0;
+}
+
 .heading {
   display: inline-block;
   border-top: 2px solid $accentColor;

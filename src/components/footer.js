@@ -21,10 +21,10 @@ const Footer = () => (
         </div>
 
         <div className={styles.clear}>
-          <a href="https://github.com/DavidCLarkin" className="Github">
+          <a href="https://github.com/DavidCLarkin">
             <FontAwesomeIcon icon={faGithub} size="2x"/>
           </a>
-          <a href="https://www.linkedin.com/in/david-larkin/" className="Linkedin">
+          <a href="https://www.linkedin.com/in/david-larkin/">
             <FontAwesomeIcon icon={faLinkedin} size="2x"/>
           </a>
           <a href="mailto:davidlarkin96@gmail.com">

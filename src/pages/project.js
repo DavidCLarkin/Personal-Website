@@ -2,7 +2,6 @@ import React from "react";
 import Helmet from "react-helmet"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import styles from "../pages/scss/project.module.scss"
 import ProjectGallery from "../components/projectGallery";
 import ProjectAbout from "../components/projectAbout";
 
@@ -32,6 +31,7 @@ export const query = graphql`
             }
             description
           }
+          githubLink
         }
       }
     }

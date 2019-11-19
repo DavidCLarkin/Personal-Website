@@ -1,11 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Footer from "./footer"
-import Header from "./header"
 import About from "./about"
 import Banner from "./banner"
 import Projects from "./projects"
 import Helmet from "react-helmet"
+import styles from "../pages/scss/base.module.scss"
 
 import "../pages/scss/layout.scss"
 
@@ -21,7 +21,7 @@ const Layout = () => {
 
       <Banner />
       <About />
-      <a href="#projects" id="projects"/>
+      <a className={styles.accessibilityLink} href="#projects" id="projects">Projects</a>>
       <Projects />
       <Footer />
     </>

@@ -20,6 +20,10 @@
   height: 1.5em;
 }
 
+.invalidLink { 
+  margin: 1rem;
+}
+
 .pic {
   max-height: 500px;
   max-width: 100%;
@@ -66,11 +70,13 @@
 }
 
 .hover {
-  margin: 0;
+  margin: 1rem;
+  color: $linkColor;
 }
 
 .hover:hover {
   text-decoration: underline;
+  color: $hoverLinkColor;
 }
 
 

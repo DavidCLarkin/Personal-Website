@@ -1,8 +1,7 @@
 import React from "react"
-
 import styles from "../pages/scss/project.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCalendarAlt, faLink } from "@fortawesome/free-solid-svg-icons"
+import { faCalendarAlt } from "@fortawesome/free-solid-svg-icons"
 import { Gallery, GalleryImage } from "react-gesture-gallery"
 import Indicator from "./indicator"
 
@@ -31,48 +30,43 @@ class ProjectGallery extends React.Component {
   render() {
     return (
       <div>
-      <section className={styles.project}>
-        <h2 className={styles.heading}>{this.props.data.title}</h2>
-        <div className={styles.info}>
-          <p>
-            <FontAwesomeIcon icon={faCalendarAlt} />
-            {" " + this.props.data.date}
-          </p>
-          <div className={styles.bar} />
-          <a className={styles.hover} href={this.props.data.link}>
-            <FontAwesomeIcon icon={faLink} />
-            {" Link To Project"}
-          </a>
-        </div>
-        <div className={styles.gallery}>
-          <Gallery
-            style={{
-              position: "relative",
-              height: "100%",
-              width: "100%",
-              objectFit: "cover",
-            }}
-            index={this.state.index}
-            onRequestChange={i => {
-              this.setState({ index: i })
-            }}
-          >
-            {this.props.data.imageTwo.map(image => (
-              <GalleryImage
-                style={{
-                  maxHeight: "400px",
-                  width: "100%",
-                  objectFit: "cover",
-                }}
-                src={image.fluid.src}
-                key={image.id}
-                alt={image.description}
-              />
-            ))}
-          </Gallery>
-        </div>
-        <Indicator href="#info" />
-      </section>
+        <section className={styles.project}>
+          <h2 className={styles.heading}>{this.props.data.title}</h2>
+          <div className={styles.info}>
+            <p>
+              <FontAwesomeIcon icon={faCalendarAlt} />
+              {" " + this.props.data.date}
+            </p>
+          </div>
+          <div className={styles.gallery}>
+            <Gallery
+              style={{
+                position: "relative",
+                height: "100%",
+                width: "100%",
+                objectFit: "cover",
+              }}
+              index={this.state.index}
+              onRequestChange={i => {
+                this.setState({ index: i })
+              }}
+            >
+              {this.props.data.imageTwo.map(image => (
+                <GalleryImage
+                  style={{
+                    maxHeight: "400px",
+                    width: "100%",
+                    objectFit: "cover",
+                  }}
+                  src={image.fluid.src}
+                  key={image.id}
+                  alt={image.description}
+                />
+              ))}
+            </Gallery>
+          </div>
+          <Indicator href="#info" />
+        </section>
       </div>
     )
   }
