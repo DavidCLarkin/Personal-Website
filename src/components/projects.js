@@ -24,15 +24,9 @@ const Projects = ({data}) => (
               {data.allContentfulProject.edges.map(edges => (
                 <div className={styles.imgContainer} key = {edges.node.title}>
                 <span className={styles.clickIcon}><FontAwesomeIcon icon={faHandPointer}/></span>
-                  <a href={`/${edges.node.title}`}><img className={styles.hoverImage} src={edges.node.image.fluid.src} alt={edges.node.image.description}></img></a>
-                  <div className={styles.middle}>
-                    <ul>
-                      <li><a href={edges.node.link} className={styles.text}>
-                        <FontAwesomeIcon icon={faLink}/>
-                        {" " + edges.node.title}
-                      </a></li>
-                    </ul>
-                  </div>
+                  <a href={`/${edges.node.title}`}>
+                    <img className={styles.hoverImage} src={edges.node.image.fluid.src} alt={edges.node.image.description}></img>
+                  </a>
                 </div>
                 ))}
             </div>

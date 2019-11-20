@@ -56,6 +56,7 @@ class ProjectGallery extends React.Component {
                   style={{
                     maxHeight: "400px",
                     width: "100%",
+                    maxWidth: "1366px",
                     objectFit: "cover",
                   }}
                   src={image.fluid.src}

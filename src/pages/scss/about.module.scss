@@ -6,9 +6,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  //height: 100vh;
   margin: 0 1rem 0 1rem;
+}
 
+.altBackground {
+  height: 100vh;
 }
 
 .split {
@@ -58,8 +61,21 @@
   }
 }
 
-@media screen and (min-height: 568px) and (min-width: 320px) {
-  .about {
-    height: 100%;
+@media screen and (min-width: 400px) and (max-width: 480px) {
+  .paragraphLeft, .paragraphRight {
+    font-size: 0.9rem;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .paragraphLeft, .paragraphRight {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and(max-width: 320px) {
+  .paragraphLeft, .paragraphRight {
+    font-size: 0.68rem;
+  }
+}
+
