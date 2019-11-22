@@ -21,7 +21,7 @@ const Layout = () => {
 
       <Banner />
       <About />
-      <a className={styles.accessibilityLink} href="#projects" id="projects">Projects</a>>
+      <a className={styles.accessibilityLink} href="#projects" id="projects">Projects</a>
       <Projects />
       <Footer />
     </>

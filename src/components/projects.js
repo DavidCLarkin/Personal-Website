@@ -4,8 +4,7 @@ import Fade from "react-reveal/Fade"
 import styles from "../pages/scss/projects.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
-  faHandPointer,
-  faLink
+  faHandPointer
 } from "@fortawesome/free-solid-svg-icons"
 import Indicator from "./indicator"
 
