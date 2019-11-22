@@ -33,11 +33,12 @@
   max-height: 500px;
   object-fit: cover;
   transition: .5s ease;
+
 }
 
 .imgContainer {
   position: relative;
-  width: 31%;
+  width: 32%;
 }
 
 .imgContainer:hover .middle {
@@ -62,7 +63,7 @@
   transition: .5s ease;
 }
 
-@media screen and (max-width: 767px)
+@media screen and (max-width: 1024px)
 {
   .imagesList {
     flex-direction: column;
