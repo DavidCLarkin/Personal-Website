@@ -86,6 +86,7 @@ nav {
     display: flex;
     font-size: 32px;
     opacity: 0;
+    text-align: center;
     visibility: hidden;
     width: 100%;
     position: fixed;
@@ -94,7 +95,7 @@ nav {
     justify-content: center;
     z-index: 1;
     top: 0;
-    right: 20%;
+    //right: 0%;
     background: rgba(0,0,0,0.95);
 
 

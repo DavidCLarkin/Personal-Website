@@ -7,11 +7,18 @@
   justify-content: center;
   align-items: center;
   //height: 100vh;
+  padding: $sectionPadding;
   margin: 0 1rem 0 1rem;
+  //overflow: auto;
+
+}
+
+.about::-webkit-scrollbar {
+  display: none;
 }
 
 .altBackground {
-  height: 100vh;
+  height: 100%;
 }
 
 .split {
@@ -39,6 +46,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
   .split {
     flex-direction: column;
   }

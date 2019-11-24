@@ -9,7 +9,7 @@ const Indicator = ({ href, higherIndicator }) => {
       <div className={styles.indicator}
           style={{  
               transform: 
-                "translateX(-10px) translateY(-1500%) rotate(45deg) "
+                "translateX(-10px) translateY(-1000%) rotate(45deg) "
               }}>
         <a href={href}>
           <span></span>
