@@ -19,10 +19,12 @@ class Header extends React.Component {
 
   closeMenu() {  
     const nav = document.getElementById("nav");
+    const mobNav = document.getElementById("menuBtn");
     if(nav.style.opacity == 1)
     {
       nav.style.opacity = 0;
       nav.style.visibility = "hidden";
+      mobNav.innerHTML = this.hamburgerIcon;
     }
   }
   
