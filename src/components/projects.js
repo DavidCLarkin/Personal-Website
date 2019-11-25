@@ -1,4 +1,5 @@
 import { graphql, StaticQuery } from "gatsby"
+import { Link } from "gatsby"
 import React from "react"
 import Fade from "react-reveal/Fade"
 import styles from "../pages/scss/projects.module.scss"
@@ -23,13 +24,13 @@ const Projects = ({ data }) => (
                 <span className={styles.clickIcon}>
                   <FontAwesomeIcon icon={faHandPointer} />
                 </span>
-                <a href={`/${edges.node.title}`}>
+                <Link to={`/${edges.node.title}`}>
                   <img
                     className={styles.hoverImage}
                     src={edges.node.image.fluid.src}
                     alt={edges.node.image.description}
                   ></img>
-                </a>
+                </Link>
               </div>
             ))}
           </div>

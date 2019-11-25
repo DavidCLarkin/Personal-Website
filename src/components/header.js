@@ -65,10 +65,10 @@ class Header extends React.Component {
             <li className={styles.logoBrowser}><img src={icon} alt="logo" /></li>
           </ul>
           <ul className={styles.rightBar}>
-            <li className={styles.left}><a href="/" onClick={this.closeMenu}>Home</a></li>
-            <li className={styles.left}><a href="/#about" onClick={this.closeMenu}>About</a></li>
-            <li className={styles.left}><a href="/#projects" onClick={this.closeMenu}>Projects</a></li>
-            <li className={styles.left}><a href="/#contact" onClick={this.closeMenu}>Contact</a></li>
+            <li className={styles.left}><Link to="/" onClick={this.closeMenu}>Home</Link></li>
+            <li className={styles.left}><Link to="/#about" onClick={this.closeMenu}>About</Link></li>
+            <li className={styles.left}><Link to="/#projects" onClick={this.closeMenu}>Projects</Link></li>
+            <li className={styles.left}><Link to="/#contact" onClick={this.closeMenu}>Contact</Link></li>
           </ul>
         </nav>
       </section>
