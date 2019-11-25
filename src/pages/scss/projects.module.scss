@@ -11,6 +11,38 @@
   //overflow: auto;
 }
 
+.tooltip {
+  visibility: hidden;
+  width: 100%;
+  color: $baseTextColor;
+  opacity: 0;
+  background-color: black;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  transition: visibility 0s linear 0.33s, opacity 0.33s linear;
+
+
+  //left: 40%;
+  //margin-left: 50%;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+
+
 .projects::-webkit-scrollbar {
   display: none;
 }
@@ -19,6 +51,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
   .hoverImage {
     width: 100%;
     background: transparent;
@@ -37,8 +70,7 @@
   height: 200px;
   max-height: 500px;
   object-fit: cover;
-  transition: .5s ease;
-
+  transition: .33s ease;
 }
 
 .imgContainer {
@@ -57,6 +89,12 @@
 
 .imgContainer:hover .clickIcon {
   transform: scale(1.5);
+}
+
+.imgContainer:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
 }
 
 .clickIcon {

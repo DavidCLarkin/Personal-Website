@@ -24,6 +24,7 @@ const Projects = ({ data }) => (
                 <span className={styles.clickIcon}>
                   <FontAwesomeIcon icon={faHandPointer} />
                 </span>
+                <span className={styles.tooltip}>{edges.node.brief}</span>
                 <Link to={`/${edges.node.title}`}>
                   <img
                     className={styles.hoverImage}
@@ -50,6 +51,7 @@ export default props => (
             node {
               id
               title
+              brief
               date
               link
               description {
