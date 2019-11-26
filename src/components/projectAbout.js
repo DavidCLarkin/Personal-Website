@@ -35,6 +35,17 @@ class ProjectAbout extends React.Component {
                 </a>
               </div>
             </section>
+            <section>
+              <p>Made with</p>
+              <ul className={styles.tags}>
+                {this.props.data.technologies.map((item, index) => (
+                  <li key={index}>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+            {/*
             <section className={styles.padding}>
               <h4 className={styles.subheading}>Technologies Used</h4>
               <ul className={styles.list}>
@@ -43,6 +54,7 @@ class ProjectAbout extends React.Component {
                 ))}
               </ul>
             </section>
+            */}
           </div>
         </section>
         <Indicator href="#contact" />

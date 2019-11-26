@@ -9,6 +9,41 @@
   text-align: center;
 }
 
+.indicatorPadding {
+  padding-top: 5rem;
+}
+
+.tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-weight: 600;
+  margin: 0;
+  cursor: default; // dont want any cursor because they are not clickable
+
+  li {
+    margin: 15px;
+    transition: .2s ease;
+    transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+  }
+
+  span {
+    display: inline-block;
+    width: 150px;
+    background: $accentColor;
+    padding: 10px;
+  }
+}
+
+.tags li:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+}
+
 .info {
   display: flex;
   justify-content: space-evenly;
@@ -109,6 +144,13 @@
 @media screen and (max-width: 425px) {
   .info p, .info a {
     font-size: 0.8rem;
+  }
+
+  .tags {
+    span {
+      font-size: 0.9rem;
+      width: 100px;
+    }
   }
 
 }

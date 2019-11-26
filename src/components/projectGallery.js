@@ -66,7 +66,9 @@ class ProjectGallery extends React.Component {
               ))}
             </Gallery>
           </div>
-          <Indicator href="#info" />
+          <div className={styles.indicatorPadding}>
+            <Indicator href="#info" />
+          </div>
         </section>
       </div>
     )
