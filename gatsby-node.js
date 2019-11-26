@@ -35,7 +35,7 @@ const { createPage } = actions
     `  ).then(result => {
     result.data.allContentfulProject.edges.forEach(({ node }) => {
       createPage({
-        path: `/${node.title}`,
+        path: `/${node.title.replace(/\s+/g, '')}`,
         component: path.resolve(`./src/pages/project.js`),
         context: {
           projectTitle: node.title
