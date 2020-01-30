@@ -10,7 +10,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "@fortawesome/react-fontawesome": "^0.1.6",
     "contentful": "^7.10.0",
-    "dotenv": "^8.1.0",
+    "dotenv": "^8.2.0",
     "env-cmd": "^10.0.1",
     "gatsby": "^2.15.26",
     "gatsby-image": "^2.2.21",
