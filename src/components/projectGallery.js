@@ -23,9 +23,11 @@ class ProjectGallery extends React.Component {
     }
   }
 
+  /*
   componentDidMount() {
     this.timerID = setInterval(() => this.scrollImage(), 5000)
   }
+  */
 
   render() {
     return (
