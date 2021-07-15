@@ -4,4 +4,4 @@ A personal website to feature projects, a link to any relevant social medias and
 
 Coded and designed by me in HTML/CSS and JavaScript. Making use of React, Gatsby and many other libraries.
 
-A link to the live site can be found here: https://davidlarkin.dev/
+A link to the live site can be found here: https://davidlarkin.netlify.app/
