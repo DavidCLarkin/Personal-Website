@@ -25,7 +25,6 @@
   bottom: 100%;
   transition: visibility 0s linear 0.33s, opacity 0.33s linear;
 
-
   //left: 40%;
   //margin-left: 50%;
 }
@@ -40,8 +39,6 @@
   border-style: solid;
   border-color: black transparent transparent transparent;
 }
-
-
 
 .projects::-webkit-scrollbar {
   display: none;
@@ -108,13 +105,6 @@
   transition: .5s ease;
 }
 
-@media screen and (max-width: 768px)
-{
-  .projects {
-    height: 100%;
-  }
-}
-
 @media screen and (max-width: 1920px)
 {
   .projects {
@@ -122,11 +112,14 @@
   }
 
   .imagesList {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: auto;
+    //flex-direction: column;
     .hoverImage { 
       max-width: 700px;
-      height: 100px;
-      max-height: 200px;
+      height: 250px;
+      max-height: 300px;
       opacity: 1;
     }
   }
@@ -145,4 +138,16 @@
     transform: scale(1.05);
   }
 
+}
+
+@media screen and (max-width: 768px)
+{
+  .projects {
+    height: 100%;
+  }
+
+  .imagesList {
+    display: flex; 
+    flex-direction: column;
+  }
 }
