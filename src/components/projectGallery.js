@@ -56,10 +56,10 @@ class ProjectGallery extends React.Component {
               {this.props.data.imageTwo.map(image => (
                 <GalleryImage
                   style={{
-                    maxHeight: "400px",
+                    maxHeight: "1000px",
                     width: "100%",
                     maxWidth: "1366px",
-                    objectFit: "cover",
+                    objectFit: "contain",
                   }}
                   src={image.fluid.src}
                   key={image.id}
