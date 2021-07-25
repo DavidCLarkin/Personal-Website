@@ -39,11 +39,50 @@ p {
 }
 
 .heading {
+  position: relative;
   display: inline-block;
-  border-top: 2px solid $accentColor;
-  border-bottom: 2px solid $accentColor;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  //border: 2px solid $accentColor;
+  padding: 15px;
+  //border-bottom: 2px solid $accentColor;
+  //padding-top: 15px;
+ // padding-bottom: 15px;
+}
+
+.heading::after {
+  content: '';
+  animation-name: bordergrow;
+  animation-duration: 5s;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  border-top: 3px solid $accentColor;
+  border-right: 3px solid $accentColor;
+}
+
+.heading::before {
+  content: '';
+  animation-name: bordergrow;
+  animation-duration: 5s;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: -5px;
+  left: -5px;
+  border-bottom: 3px solid $accentColor;
+  border-left: 3px solid $accentColor;
+}
+
+@keyframes bordergrow {
+  from {
+    width: 5px;
+    height: 5px;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .headingContainer {

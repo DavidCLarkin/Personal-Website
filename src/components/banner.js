@@ -13,8 +13,10 @@ const Banner = () => (
       height={'calc(100vh + 100px)'}
       params={params} 
       />
-    <h1 className={styles.name}>David Larkin.</h1>
-    <h3>Software Developer</h3>
+    <div className={styles.border}>
+      <h1 className={styles.name}>David Larkin.</h1>
+      <h3>Software Developer</h3>
+    </div>
     <Indicator href="/#about" higherIndicator={true}/>
   </div>
 )

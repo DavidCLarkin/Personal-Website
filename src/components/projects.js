@@ -8,6 +8,7 @@ import { faHandPointer } from "@fortawesome/free-solid-svg-icons"
 import Indicator from "./indicator"
 
 const Projects = ({ data }) => (
+  
   <div className={styles.wrapper}>
     <div className={styles.projects}>
       <section>

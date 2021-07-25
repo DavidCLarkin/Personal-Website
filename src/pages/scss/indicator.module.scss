@@ -15,9 +15,9 @@
   height: 100%;
   display: block;
   box-sizing: border-box;
-  border-right: 3px solid #D9D9D9;
-  border-bottom: 3px solid #D9D9D9;
-  animation: indicator 2s linear .1s infinite;
+  border-right: 2px solid #D9D9D9;
+  border-bottom: 2px solid #D9D9D9;
+  animation: indicator 1s linear .1s infinite;
 }
 
 .indicator span:nth-child(1)
