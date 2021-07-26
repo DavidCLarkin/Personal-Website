@@ -47,6 +47,7 @@ module.exports = {
       options: {
         spaceId: 'muk1dsfdlq3c',
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

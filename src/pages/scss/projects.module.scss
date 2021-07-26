@@ -24,6 +24,7 @@
   z-index: 1;
   bottom: 100%;
   transition: visibility 0s linear 0.33s, opacity 0.33s linear;
+  border: 1px solid $accentColor;
 
   //left: 40%;
   //margin-left: 50%;
@@ -52,6 +53,7 @@
   padding-bottom: 4rem;
 
   .hoverImage {
+    border-radius: 5px;
     width: 100%;
     background: transparent;
     margin: 0.1rem 0;
@@ -61,7 +63,7 @@
 }
 
 .hoverImage {
-  border: none;
+  //border: none;
   opacity: 0.6;
   max-width: 1000px;
   display: block;
@@ -70,7 +72,6 @@
   max-height: 500px;
   object-fit: cover;
   transition: .33s ease;
-
 }
 
 .imgContainer {

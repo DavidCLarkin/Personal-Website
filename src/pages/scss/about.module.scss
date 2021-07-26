@@ -10,7 +10,6 @@
   padding: $sectionPadding;
   margin: 0 1rem 0 1rem;
   //overflow: auto;
-
 }
 
 .about::-webkit-scrollbar {
@@ -26,17 +25,22 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  text-align: center;
+  text-align: center;  
 }
 
-.paragraphLeft {
-  //text-align: center;
+.leftContainer {
   width: 45%;
+  margin: auto 0;
+}
+.rightContainer {
+  margin: auto 0;
+  width: 45%;
+}
+.paragraphLeft {
   padding-top: 3rem;
 }
 
 .paragraphRight {
-  width: 45%;
   padding-top: 3rem;
 }
 

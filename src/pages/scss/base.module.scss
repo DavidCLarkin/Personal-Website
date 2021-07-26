@@ -14,6 +14,17 @@ $sectionPadding: 3rem 0 3rem 0;
   font-family: 'Poppins', 'sans-serif';
 }
 
+@mixin corner-borders($border1, $border2, $tb, $lr) {
+  content: '';
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  #{$tb}: -5px;
+  #{$lr}: -5px;
+  #{$border1}: 3px solid $accentColor;
+  #{$border2}: 3px solid $accentColor;
+}
+
 .altBackground {
   width: 100%;
   background-color: $altBackgroundColor;
@@ -41,37 +52,15 @@ p {
 .heading {
   position: relative;
   display: inline-block;
-  //border: 2px solid $accentColor;
   padding: 15px;
-  //border-bottom: 2px solid $accentColor;
-  //padding-top: 15px;
- // padding-bottom: 15px;
 }
 
 .heading::after {
-  content: '';
-  animation-name: bordergrow;
-  animation-duration: 5s;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  border-top: 3px solid $accentColor;
-  border-right: 3px solid $accentColor;
+  @include corner-borders(border-top,border-right, top, right);
 }
 
 .heading::before {
-  content: '';
-  animation-name: bordergrow;
-  animation-duration: 5s;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  bottom: -5px;
-  left: -5px;
-  border-bottom: 3px solid $accentColor;
-  border-left: 3px solid $accentColor;
+  @include corner-borders(border-bottom, border-left, bottom, left);
 }
 
 @keyframes bordergrow {
