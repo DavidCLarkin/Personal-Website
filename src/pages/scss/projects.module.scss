@@ -57,6 +57,7 @@
     width: 100%;
     background: transparent;
     margin: 0.1rem 0;
+    z-index: 100;
     cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
   }
@@ -64,7 +65,7 @@
 
 .hoverImage {
   //border: none;
-  //opacity: 0.6;
+  opacity: 1;
   max-width: 1000px;
   display: block;
   margin: 0;
@@ -80,12 +81,21 @@
   width: 32%;
 }
 
+.blob {
+  position: absolute;
+  left: -5em;
+  top: -2em;
+  height: 10em;
+  width: 10em;
+  z-index: -1;
+}
+
 .imgContainer:hover .middle {
-  opacity: 1;
+  //opacity: 1;
 }
 
 .imgContainer:hover .hoverImage {
-  //opacity: 1;
+  opacity: 1;
   transform: scale(1.05);
 }
 
@@ -142,10 +152,9 @@
   }
 
   .imgContainer:hover .hoverImage {
-    opacity: 0.5;
+    opacity: 1;
     transform: scale(1.05);
   }
-
 }
 
 @media screen and (max-width: 768px)

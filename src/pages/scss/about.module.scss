@@ -6,10 +6,38 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  //height: 100vh;
   padding: $sectionPadding;
   margin: 0 1rem 0 1rem;
-  //overflow: auto;
+}
+
+svg path {
+  fill: $accentDarkColor;
+}
+
+.bgBoxContainerLeft { 
+  position: relative;
+}
+
+.bgBoxLeft {
+  position: absolute;
+  top: -2em;
+  z-index: -100;
+  height: 12em;
+  width: 12em;
+  left: -5em;
+}
+
+.bgBoxContainerRight {
+  position: relative;
+}
+
+.bgBoxRight {
+  position:absolute;
+  top: -3em;
+  z-index: -100;
+  height: 12em;
+  width: 12em;
+  left: 20em;
 }
 
 .about::-webkit-scrollbar {
@@ -49,8 +77,32 @@
   height: 18em;
 }
 
+@media screen and (max-width: 1440px) {
+  .bgBoxLeft {
+    left:-2em;
+  }
+  .bgBoxRight {
+    left: 18em;
+    top: -2em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .bgBoxLeft {
+    left:-3em;
+  }
+  .bgBoxRight {
+    left: 12em;
+  }
+}
+
 @media screen and (max-width: 768px) {
 
+  svg path {
+    stroke: $accentDarkColor;
+    stroke-width: 8;
+    fill: none;
+  }
   .split {
     flex-direction: column;
   }
@@ -63,6 +115,20 @@
   .paragraphLeft {
     width: 100%;
     padding-top: 0;
+  }
+
+  .bgBoxLeft {
+    top: -10em;
+    height: 20em;
+    width: 20em;
+    left: -12em;
+  }
+
+  .bgBoxRight {
+    left: 26em;
+    top: -2em;
+    height: 20em;
+    width: 20em;
   }
 
   .paragraphRight{
@@ -83,17 +149,30 @@
   .paragraphLeft, .paragraphRight {
     font-size: 0.9rem;
   }
+
+  .bgBoxRight {
+    left: 18em;
+  }
 }
 
 @media screen and (max-width: 375px) {
   .paragraphLeft, .paragraphRight {
     font-size: 0.8rem;
   }
+
+  .bgBoxRight {
+    left: 15em;
+  }
 }
 
 @media screen and(max-width: 320px) {
   .paragraphLeft, .paragraphRight {
     font-size: 0.68rem;
+  }
+  .bgBoxRight {
+    left: 12em;
+    height: 17em;
+    width: 17em;
   }
 }
 
