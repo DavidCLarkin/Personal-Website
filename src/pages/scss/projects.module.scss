@@ -82,6 +82,7 @@
 }
 
 .blob {
+  fill: $accentDarkColor;
   position: absolute;
   left: -5em;
   top: -2em;
@@ -120,6 +121,11 @@
 
 @media screen and (max-width: 1920px)
 {
+  
+  .blob {
+    fill: $accentDarkColor;
+  }
+
   .projects {
     height: 100%;
   }
@@ -175,5 +181,11 @@
   .imagesList {
     display: flex; 
     flex-direction: column;
+  }
+
+  .blob {
+    stroke: $accentDarkColor;
+    stroke-width: 8;
+    fill: none;
   }
 }

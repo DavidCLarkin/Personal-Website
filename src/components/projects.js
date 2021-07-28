@@ -34,7 +34,7 @@ const Projects = ({ data }) => {
             {data.allContentfulProject.edges.map(edges => (
               <div className={styles.imgContainer} key={edges.node.title}>
                 <svg className={styles.blob} viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#FA4D56" d={blobs[Math.floor(Math.random()*blobs.length)]} transform="translate(100 100)" />
+                  <path d={blobs[Math.floor(Math.random()*blobs.length)]} transform="translate(100 100)" />
                 </svg>
                 <span className={styles.clickIcon}>
                   <FontAwesomeIcon icon={faHandPointer} />

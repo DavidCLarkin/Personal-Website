@@ -10,15 +10,12 @@
   margin: 0 1rem 0 1rem;
 }
 
-svg path {
-  fill: $accentDarkColor;
-}
-
 .bgBoxContainerLeft { 
   position: relative;
 }
 
 .bgBoxLeft {
+  fill: $accentDarkColor;
   position: absolute;
   top: -2em;
   z-index: -100;
@@ -32,6 +29,7 @@ svg path {
 }
 
 .bgBoxRight {
+  fill: $accentDarkColor;
   position:absolute;
   top: -3em;
   z-index: -100;
@@ -98,11 +96,7 @@ svg path {
 
 @media screen and (max-width: 768px) {
 
-  svg path {
-    stroke: $accentDarkColor;
-    stroke-width: 8;
-    fill: none;
-  }
+
   .split {
     flex-direction: column;
   }
@@ -115,6 +109,12 @@ svg path {
   .paragraphLeft {
     width: 100%;
     padding-top: 0;
+  }
+  
+  .bgBoxLeft, .bgBoxRight {
+    stroke: $accentDarkColor;
+    stroke-width: 8;
+    fill: none;
   }
 
   .bgBoxLeft {
